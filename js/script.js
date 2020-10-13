@@ -2,16 +2,22 @@
 window.addEventListener('DOMContentLoaded', () => {
    //alert('Hello!');
    
-   const sidebarRight = document.querySelector('.sidebar-right'),
-         sidebarBtn = sidebarRight.querySelector('#sidebarBtn');
-   sidebarBtn.addEventListener('click',(e) => {
-      e.preventDefault();
-      sidebarRight.classList.toggle('show-menu');
+   // const sidebarRight = document.querySelector('.sidebar-right'),
+   //       sidebarBtn = sidebarRight.querySelector('#sidebarBtn');
+   // sidebarBtn.addEventListener('click',(e) => {
+   //    e.preventDefault();
+   //    sidebarRight.classList.toggle('show-menu');
 
 
-      // alert('Hello!');
-   });
+   //    // alert('Hello!');
+   // });
 
+   // Header-avatar
+   const headerAvatar = document.querySelector('.header-avatar'),
+         headerAvatarText = headerAvatar.querySelector('.header-avatar__text');
+         headerAvatar.addEventListener('click', () => {
+            headerAvatarText.classList.toggle('hide');
+         });
    // Tabs
    const tabs = document.querySelectorAll('.tab'),
          tabsContent = document.querySelectorAll('.tab-content'),

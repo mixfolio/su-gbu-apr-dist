@@ -9,23 +9,27 @@
    
 </head>
 <body>
+   
    <div class="header">
-      <a class="nav-brand" href="#"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
-      <h5 class="header__title">Система управления ГБУ АПР</h5>
-      <div class="header__group-btn">
-         <form>
-            <input class="f-control" name="search" type="text" placeholder="Поиск">
-         </form>
-         <div class="avatar ml-6">
-            <img src="img/svg/user-ico.svg" width="18" height="18" alt="user-ico">
+   <a class="nav-brand" href="#"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input class="f-control" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+         <div class="header-avatar__pict">
+            <img src="img/user-avatar.jpg" width="48" height="48" alt="user-ico">
          </div>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
       </div>
-      
    </div>
-
+</div>
+   
    <div class="content">
       <div class="sidebar-left">
          <ul class="sidebar-left__menu">
+            <!-- Home -->
             <li>
                <a class="nav-link" href="#">
                   <svg class="svg-link active-item" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
@@ -35,6 +39,7 @@
                   </svg>
                </a>
             </li>
+            <!-- Mailing -->
             <li>
                <a class="nav-link" href="mailing.html">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
@@ -44,6 +49,7 @@
                   </svg>
                </a>
             </li>
+            <!-- List -->
             <li>
                <a class="nav-link" href="list.html">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
@@ -53,6 +59,7 @@
                   </svg>
                </a>
             </li>
+            <!-- Industry -->
             <li>
                <a class="nav-link" href="#">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
@@ -68,6 +75,7 @@
                   </svg>
                </a>
             </li>
+            <!-- Private -->
             <li>
                <a class="nav-link" href="#">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
@@ -79,8 +87,9 @@
                   </svg>
                </a>
             </li>
+            <!-- Map -->
             <li>
-               <a class="nav-link" href="#">
+               <a class="nav-link" href="map.html">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
                      xmlns="http://www.w3.org/2000/svg">
                      <path
@@ -114,7 +123,7 @@
                </a>
             </li>
             <li>
-               <a class="nav-link" href="#">
+               <a class="nav-link" href="setup.html">
                   <svg class="svg-link" width="48" height="48" viewBox="0 0 48 48" fill="#E0E0E0"
                      xmlns="http://www.w3.org/2000/svg">
                      <path
@@ -128,21 +137,21 @@
          </ul>
       </div>
       <main class="main">
-         <section class="px-3 py-5">
+         <section class="px-3 py-5" style="background: #ffffff;">
             <ul class="tabs-list mb-5">
-               <li>
+               <li class="tab-item">
                   <a class="tab tab-active" href="#">Бюджет</a>
                </li>
-               <li>
+               <li class="tab-item">
                   <a class="tab" href="#">Затраты</a>
                </li>
-               <li>
+               <li class="tab-item">
                   <a class="tab" href="#">ФОТ</a>
                </li>
-               <li>
+               <li class="tab-item">
                   <a class="tab" href="#">Закупки</a>
                </li>
-               <li>
+               <li class="tab-item">
                   <a class="tab" href="#">Прочее</a>
                </li>
             </ul>
@@ -151,12 +160,49 @@
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse! Natus,
                   provident nulla labore ullam sit quo officia quaerat, itaque beatae ducimus, dolorem veritatis officiis.
                </p>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse! Natus,
+               <p class="mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse! Natus,
                   provident nulla labore ullam sit quo officia quaerat, itaque beatae ducimus, dolorem veritatis officiis.
                </p>
                <h4 class="title mb-4">Состав работ</h4>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse! Natus,
-                  provident nulla labore ullam sit quo officia quaerat, itaque beatae ducimus, dolorem veritatis officiis.</p>
+               <div class="mb-3">
+                  <select class="f-select" style="width: 148px;">
+                     <option selected="">Квартал 1</option>
+                     <option value="1">Квартал 2</option>
+                     <option value="2">Квартал 3</option>
+                     <option value="2">Квартал 4</option>
+                   </select>
+                   <select class="f-select ml-3" style="width: 100px;">
+                     <option selected="">2020</option>
+                     <option value="1">2019</option>
+                     <option value="2">2018</option>
+                     <option value="3">2017</option>
+                   </select>
+               </div>
+               <div class="border d-flex">
+                  <div class="card-item" style="flex: 0 0 10%;">
+                     <p>1100023112162</p>
+                  </div>
+
+                  <div class="card-item" style="flex: 0 0 50%;">
+                     <p>Подготовка аналитических материалов - в сфере инновационного развития города, привлечения и развития высокотехнологичного бизнеса, развития инвестиционного климата Москвы</p>
+                  </div>
+
+                  <div class="card-item text-center" style="flex: 0 0 10%;">
+                     <p>14</p>
+                  </div>
+
+                  <div class="card-item text-center" style="flex: 0 0 10%;">
+                     <p>7</p>
+                  </div>
+
+                  <div class="card-item text-center" style="flex: 0 0 10%;">
+                     <p>132405,58</p>
+                  </div>
+
+                  <div class="card-item text-center" style="flex: 0 0 10%;">
+                     <p>132405,58</p>
+                  </div>
+               </div>
             </div>
 
             <div class="tab-content">
@@ -167,9 +213,6 @@
                <h4 class="title mb-4">Расходы за месяц 2019г</h4>
                
             </div>
-
-
-            
 
             <div class="tab-content">
                <h4 class="title mb-4">Структура ФОТ (Вкладка ФОТ)</h4>
@@ -191,37 +234,55 @@
                </p> 
             </div>
 
-
             <div class="tab-content">
                <h4 class="title mb-4">(Вкладка Прочее)</h4>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque eveniet incidunt ad autem quos esse! Natus,
                   provident nulla labore ullam sit quo officia quaerat, itaque beatae ducimus, dolorem veritatis officiis.
                </p>
-               
             </div>
-            
-
-            
-         
+   
          </section>
-         
-         
-        
+   
       </main>
-      <div class="sidebar-right">
-         <ul class="sidebar-right__menu">
-            <li>
-               <a class="btn-round" id="sidebarBtn" href="#"><img src="img/svg/arrow-ico.svg" alt="arrow" width="16" height="16"></a>
-            </li>
-            <li>
-               <a class="btn-round" href="#"><img src="img/svg/alarm-clock-ico.svg" alt="notify" width="16" height="16"></a>
-            </li>
-            <li>
-               <a class="btn-round" href="#"><img src="img/svg/calendar-ico.svg" alt="shedule" width="16" height="16"></a>
-            </li> 
-         </ul>
-
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round" id="sidebarBtn">
+            <img src="img/svg/arrow-ico.svg" alt="arrow">
+         </div>
+         <p class="sidebar__toggler-text ml-2">Свернуть</p>
       </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify">
+         </div>
+         <p class="sidebar__desc">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule">
+         </div>
+         <p class="sidebar__desc">Календарь</p>
+      </div>
+
+      <div class="sidebar__date mb-4">
+         <p class="sidebar__date-current">13 октября 2020г</p>
+         <p class="sidebar__weekday">Вторник</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="d-block" src="img/svg/plus-ico.svg" alt="plus">
+         </div>
+         <p class="ml-1">Добавить событие</p>
+      </div>
+
+   </div>
+</div>
    </div>
    
    <script src="js/script.min.js"></script>

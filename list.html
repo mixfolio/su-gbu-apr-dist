@@ -9,19 +9,22 @@
    
 </head>
 <body>
+   
    <div class="header">
-      <a class="nav-brand" href="#"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
-      <h5 class="header__title">Система управления ГБУ АПР</h5>
-      <div class="header__group-btn">
-         <form>
-            <input class="f-control" name="search" type="text" placeholder="Поиск">
-         </form>
-         <div class="avatar ml-6">
-            <img src="img/svg/user-ico.svg" width="18" height="18" alt="user-ico">
+   <a class="nav-brand" href="#"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input class="f-control" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+         <div class="header-avatar__pict">
+            <img src="img/user-avatar.jpg" width="48" height="48" alt="user-ico">
          </div>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
       </div>
-      
    </div>
+</div>
 
    <div class="content">
       <div class="sidebar-left">
@@ -257,20 +260,45 @@
          
         
       </main>
-      <div class="sidebar-right">
-         <ul class="sidebar-right__menu">
-            <li>
-               <a class="btn-round" id="sidebarBtn" href="#"><img src="img/svg/arrow-ico.svg" alt="arrow" width="16" height="16"></a>
-            </li>
-            <li>
-               <a class="btn-round" href="#"><img src="img/svg/alarm-clock-ico.svg" alt="notify" width="16" height="16"></a>
-            </li>
-            <li>
-               <a class="btn-round" href="#"><img src="img/svg/calendar-ico.svg" alt="shedule" width="16" height="16"></a>
-            </li> 
-         </ul>
-
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round" id="sidebarBtn">
+            <img src="img/svg/arrow-ico.svg" alt="arrow">
+         </div>
+         <p class="sidebar__toggler-text ml-2">Свернуть</p>
       </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify">
+         </div>
+         <p class="sidebar__desc">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule">
+         </div>
+         <p class="sidebar__desc">Календарь</p>
+      </div>
+
+      <div class="sidebar__date mb-4">
+         <p class="sidebar__date-current">13 октября 2020г</p>
+         <p class="sidebar__weekday">Вторник</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="">
+            <img class="d-block" src="img/svg/plus-ico.svg" alt="plus">
+         </div>
+         <p class="ml-1">Добавить событие</p>
+      </div>
+
+   </div>
+</div>
    </div>
    
    <script src="js/script.min.js"></script>
