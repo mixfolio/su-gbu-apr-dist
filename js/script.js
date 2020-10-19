@@ -18,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
    headerAvatar.addEventListener('click', () => {
       headerAvatarText.classList.toggle('hide');
    });
+
+   
    // Tabs
    const tabs = document.querySelectorAll('.tab'),
       tabsContent = document.querySelectorAll('.tab-content'),
