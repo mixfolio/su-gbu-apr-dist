@@ -138,21 +138,37 @@
             <h4 class="title mb-4">Рассылка</h4>
             <form class="card">
                <div class="mb-3">
-                  <label class="f-label f-label-ico f-label-ico--01" for="mailFrom">от кого</label>
-                  <input id="mailFrom" name="mail-from" class="f-control d-block" type="text" placeholder="Введите почту">
+                  <label class="f-label f-label-ico f-label-ico--mailFrom" for="mailFrom">от кого</label>
+                  <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите почту">
                </div>
                
                <div class="mb-3">
-                  <label class="f-label f-label-ico f-label-ico--02" for="mailTo">кому</label>
-                  <input id="mailTo" name="mail-to" class="f-control d-block" type="text" placeholder="Введите почту">
+                  <label class="f-label f-label-ico f-label-ico--mailTo" for="mailTo">кому</label>
+                  <input id="mailTo" name="mail-to" class="f-control w-100" type="text" placeholder="Введите почту">
                </div>
 
                <div class="mb-3">
-                  <label class="f-label f-label-ico f-label-ico--03" for="theme">тема</label>
-                  <input id="theme" name="theme" class="f-control d-block" type="text" placeholder="Введите текст">
+                  <label class="f-label f-label-ico f-label-ico--subject" for="subject">тема</label>
+                  <input id="subject" name="subject" class="f-control w-100" type="text" placeholder="Введите текст">
                </div>
 
-               <button class="btn btn-primary" type="submit">Отправить</button>
+               <div class="mb-3">
+                  <label class="f-label f-label-ico f-label-ico--message" for="subject">Сообщение</label>
+                  <textarea class="f-control w-100" name="message" id="message" placeholder="Введите сообщение"></textarea>
+               </div>
+
+               <div class="mb-3">
+                  <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
+                  <input id="subject" name="subject" class="f-control w-100 hide" type="file" placeholder="Введите текст">
+                  <div class="label-attachment">
+                     <img class="d-block" src="img/svg/mailing-icons/box-ico.svg" alt="box">
+                     <p>перетащите или прикрепите файлы</p>
+                  </div>
+               </div>
+               <div class="text-center">
+                  <button class="btn btn-primary" type="submit">Отправить</button>
+               </div>
+               
             </form>
             
              
