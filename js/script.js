@@ -1,5 +1,11 @@
 'use strict';
 window.addEventListener('DOMContentLoaded', () => {
+
+   const btnBurger = document.querySelector('.btn-burger'),
+      sideBarLeft = document.querySelector('.sidebar-left');
+btnBurger.addEventListener('click', () => {
+   sideBarLeft.classList.toggle('sidebar-left--show');
+});
    // Tabs tabs.js
 const tabs = document.querySelectorAll('.tab'),
    tabsContent = document.querySelectorAll('.tab-content'),
