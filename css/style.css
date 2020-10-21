@@ -30,6 +30,14 @@
   margin: 0;
 }
 
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
 .mr-6 {
   margin-right: 3rem;
 }
@@ -196,7 +204,7 @@ td {
 th {
   font-family: 'Futura PT Book';
   font-size: 0.75rem;
-  color: #828282;
+  border: 1px solid #ffffff;
 }
 
 td {
@@ -227,18 +235,17 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 0 -12px;
   margin-bottom: 2.5rem;
 }
 
 .tab-item {
-  width: calc(20% - 24px);
   margin: 0 12px;
+  width: 100%;
 }
 
 .tab {
+  padding: 16px;
   font-family: 'Futura PT Demi';
   font-size: 1.125rem;
   text-decoration: none;
@@ -676,17 +683,17 @@ hr {
 .sidebar-left {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 100px;
-          flex: 0 0 100px;
+      -ms-flex: 0 0 220px;
+          flex: 0 0 220px;
   min-height: calc(100vh - 116px);
   background: #ffffff;
   -webkit-box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.04);
           box-shadow: 4px 0px 24px rgba(0, 0, 0, 0.04);
   z-index: 5;
+  padding: 8px;
 }
 
 .sidebar-left__menu {
-  width: 48px;
   margin: 28px auto 0 auto;
 }
 
@@ -694,17 +701,13 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 48px;
-          flex: 0 0 48px;
   height: 48px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.5rem;
+  color: #bdbdbd;
+  text-decoration: none;
 }
 
 .nav-link img {
@@ -715,8 +718,8 @@ hr {
   fill: #fafafa;
 }
 
-.nav-link object svg {
-  fill: red;
+.nav-link--active {
+  color: #000000;
 }
 
 .sidebar-right {
@@ -937,6 +940,12 @@ hr {
   margin-right: -12px;
 }
 
+.col-3 {
+  width: calc(25% - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .col-4 {
   width: calc(33.33% - 24px);
   margin-left: 12px;
@@ -947,4 +956,15 @@ hr {
   width: calc(50% - 24px);
   margin-left: 12px;
   margin-right: 12px;
+}
+
+.map {
+  position: relative;
+}
+
+.card-map {
+  position: absolute;
+  width: 344px;
+  top: 48px;
+  left: 24px;
 }
