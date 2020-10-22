@@ -206,6 +206,7 @@
 }
 
 .btn-burger {
+  z-index: 5;
   position: absolute;
   top: 24px;
   left: 24px;
@@ -410,6 +411,30 @@ textarea {
 
 .f-label-ico--userPhoto::before {
   content: url(../img/svg/profile-icons/user-photo-ico.svg);
+}
+
+.f-label-ico--user::before {
+  content: url(../img/svg/form-label-icons/user-ico.svg);
+}
+
+.f-label-ico--building::before {
+  content: url(../img/svg/form-label-icons/building-ico.svg);
+}
+
+.f-label-ico--time::before {
+  content: url(../img/svg/form-label-icons/calendar-ico.svg);
+}
+
+.f-label-ico--goal::before {
+  content: url(../img/svg/form-label-icons/goal-ico.svg);
+}
+
+.f-label-ico--address::before {
+  content: url(../img/svg/form-label-icons/address-ico.svg);
+}
+
+.f-label-ico--desc::before {
+  content: url(../img/svg/form-label-icons/writing-ico.svg);
 }
 
 .f-control {
