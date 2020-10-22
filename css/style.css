@@ -866,16 +866,14 @@ hr {
   text-decoration: none;
 }
 
-.nav-link img {
-  display: block;
-}
-
-.nav-link object {
-  fill: #fafafa;
-}
-
-.nav-link--active {
+.nav-link--active,
+.nav-link:hover {
   color: #000000;
+}
+
+.nav-link--active svg,
+.nav-link:hover svg {
+  fill: #4C51CC;
 }
 
 .sidebar-right {
@@ -946,11 +944,6 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.active-item,
-.svg-link:hover {
-  fill: #4C51CC;
 }
 
 .map-img {
