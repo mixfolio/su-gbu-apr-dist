@@ -6,6 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
 btnBurger.addEventListener('click', () => {
    sideBarLeft.classList.toggle('sidebar-left--show');
 });
+   const sidebarRight = document.querySelector('.sidebar-right'),
+   sidebarBtn = sidebarRight.querySelector('#sidebarBtn');
+sidebarBtn.addEventListener('click', () => {
+   sidebarRight.classList.toggle('show-menu');
+});
    // Tabs tabs.js
 const tabs = document.querySelectorAll('.tab'),
    tabsContent = document.querySelectorAll('.tab-content'),
@@ -100,44 +105,13 @@ new SpendItem(
    '#spend tbody'
 ).render();
 
-   // const sidebarRight = document.querySelector('.sidebar-right'),
-   //       sidebarBtn = sidebarRight.querySelector('#sidebarBtn');
-   // sidebarBtn.addEventListener('click',(e) => {
-   //    e.preventDefault();
-   //    sidebarRight.classList.toggle('show-menu');
-
-
-   //    // alert('Hello!');
-   // });
-
-   // Header-avatar
-   const headerAvatar = document.querySelector('.header-avatar'),
-      headerAvatarText = headerAvatar.querySelector('.header-avatar__text');
-   headerAvatar.addEventListener('click', () => {
-      headerAvatarText.classList.toggle('hide');
-   });
-
-
    
 
-   // class HeadTitle {
-   //    constructor(title, parentSelector) {
-   //       this.title = title;
-   //       this.parent = document.querySelector(parentSelector);
-   //    }
-   //    render() {
-   //       const element = document.createElement('div');
-   //       element.innerHTML = `
-   //       <h1 class="title">${this.title}</h1>
-   //       `;
-   //       this.parent.append(element);
-   //    }
-   // }
-
-   // new HeadTitle(
-   //    "Это тестовый заголовок!",
-   //    '#test'
-   // ).render();
-
+   // Header-avatar
+   // const headerAvatar = document.querySelector('.header-avatar'),
+   //    headerAvatarText = headerAvatar.querySelector('.header-avatar__text');
+   // headerAvatar.addEventListener('click', () => {
+   //    headerAvatarText.classList.toggle('hide');
+   // });
 
 });
