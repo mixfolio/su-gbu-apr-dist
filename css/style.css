@@ -26,6 +26,11 @@
   text-align: center;
 }
 
+.mx-col {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -44,6 +49,10 @@
 
 .mr-6 {
   margin-right: 3rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .ml-1 {
