@@ -332,6 +332,79 @@ td {
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
 }
 
+.tabs-list-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+  margin-bottom: 1.5rem;
+}
+
+.tab-item-2 {
+  margin: 0 12px;
+  margin-bottom: 24px;
+}
+
+.tab-2 {
+  padding: 16px 24px;
+  font-family: 'Futura PT Demi';
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #BFBFBF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  height: 64px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.tab-2::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  background: no-repeat center / 100%;
+}
+
+.tab-2--reg::before {
+  background-image: url(../img/tab-icons/book-pen-ico-dsbl.png);
+}
+
+.tab-2--trip::before {
+  background-image: url(../img/tab-icons/resume-ico-dsbl.png);
+}
+
+.tab-2--report::before {
+  background-image: url(../img/tab-icons/list-ico-dsbl.png);
+}
+
+.tab-2:hover {
+  color: #4B4D84;
+  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+}
+
+.tab-2-active {
+  color: #4B4D84;
+  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+}
+
 textarea {
   resize: none;
   vertical-align: middle;
