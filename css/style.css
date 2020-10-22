@@ -285,57 +285,6 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -12px;
-  margin-bottom: 2.5rem;
-}
-
-.tab-item {
-  margin: 0 12px;
-  width: 100%;
-}
-
-.tab {
-  padding: 16px;
-  font-family: 'Futura PT Demi';
-  font-size: 1.125rem;
-  text-decoration: none;
-  color: #BFBFBF;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #fff;
-  height: 64px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.tab:hover {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-}
-
-.tab-active {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-}
-
-.tabs-list-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -12px;
@@ -343,12 +292,12 @@ td {
   margin-bottom: 1.5rem;
 }
 
-.tab-item-2 {
+.tab-item {
   margin: 0 12px;
   margin-bottom: 24px;
 }
 
-.tab-2 {
+.tab {
   padding: 16px 24px;
   font-family: 'Futura PT Demi';
   font-size: 1.125rem;
@@ -373,33 +322,51 @@ td {
   transition: all 0.3s ease 0s;
 }
 
-.tab-2::before {
+.tab::before {
   content: '';
   width: 24px;
   height: 24px;
   margin-right: 8px;
   background: no-repeat center / 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.tab-2--reg::before {
-  background-image: url(../img/tab-icons/book-pen-ico-dsbl.png);
-}
-
-.tab-2--trip::before {
-  background-image: url(../img/tab-icons/resume-ico-dsbl.png);
-}
-
-.tab-2--report::before {
-  background-image: url(../img/tab-icons/list-ico-dsbl.png);
-}
-
-.tab-2:hover {
+.tab--active {
   color: #4B4D84;
   -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
 }
 
-.tab-2-active {
+.tab--reg::before {
+  background-image: url(../img/tab-icons/book-pen-ico-dsbl.png);
+}
+
+.tab--reg.tab--active::before,
+.tab--reg:hover::before {
+  background-image: url(../img/tab-icons/book-pen-ico.png);
+}
+
+.tab--trip::before {
+  background-image: url(../img/tab-icons/resume-ico-dsbl.png);
+}
+
+.tab--trip.tab--active::before,
+.tab--trip:hover::before {
+  background-image: url(../img/tab-icons/resume-ico.png);
+}
+
+.tab--report::before {
+  background-image: url(../img/tab-icons/list-ico-dsbl.png);
+}
+
+.tab--report.tab--active::before,
+.tab--report:hover::before {
+  background-image: url(../img/tab-icons/list-ico.png);
+}
+
+.tab:hover {
   color: #4B4D84;
   -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
