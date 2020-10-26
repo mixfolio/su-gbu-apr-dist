@@ -190,8 +190,8 @@
 }
 
 .btn-round:hover {
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
+          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
 }
 
 .btn-round-sm {
@@ -866,6 +866,10 @@ hr {
   font-size: 1.125rem;
 }
 
+.icon-muted {
+  fill: #e0e0e0;
+}
+
 .sidebar-left {
   position: relative;
   -webkit-box-flex: 0;
@@ -878,9 +882,6 @@ hr {
   z-index: 5;
   padding: 8px;
   display: none;
-  -webkit-transition: All 0.5s ease 0s;
-  -o-transition: All 0.5s ease 0s;
-  transition: All 0.5s ease 0s;
 }
 
 .sidebar-left--show {
@@ -904,6 +905,16 @@ hr {
   margin-bottom: 1.5rem;
   color: #bdbdbd;
   text-decoration: none;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
+}
+
+.nav-link svg {
+  margin: 11px;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
 }
 
 .nav-link--active,
@@ -917,6 +928,9 @@ hr {
 }
 
 .sidebar-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 240px;
+          flex: 0 0 240px;
   min-height: calc(100vh - 116px);
   background: #ffffff;
   padding: 32px;
@@ -927,9 +941,6 @@ hr {
 }
 
 .sidebar-right.show-menu {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 64px;
           flex: 0 0 64px;

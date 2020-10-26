@@ -42,14 +42,14 @@ tabsParent.addEventListener('click', (event) => {
    }
 });
 
-   const btnInfo = document.querySelector('.btn-info');
+   //const btnInfo = document.querySelector('.btn-info');
 const tableInfo = document.querySelector('.table-info');
 
 btnInfo.addEventListener('click', () => {
    tableInfo.classList.toggle('table-info--show');
 });
 
-   //Classes  spend.js
+   ////Classes  spend.js
 class SpendItem {
    constructor(name, code, plan, execRub, execPers, frcRub, frcPers, parentSelector) {
       this.name = name;
