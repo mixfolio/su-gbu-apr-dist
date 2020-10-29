@@ -20,10 +20,18 @@
          <input class="f-control" name="search" type="text" placeholder="Поиск">
       </form>
       <div class="header-avatar">
-         <a href="profile-2.html">
+         <a>
             <div class="header-avatar__pict">
                <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico">
             </div>
+            <ul class="user-menu">
+               <li>
+                  <a class="profile-link" href="profile-2.html">Профиль</a>
+               </li>
+               <li>
+                  <a class="exit-link" href="index.html">Выйти</a>
+               </li>
+            </ul>
          </a>
          
          <p class="header-avatar__text hide">Родионов П.В.</p>
@@ -242,6 +250,40 @@
                <span class="btn-round btn-round-sm mr-1">
                   <img src="img/svg/buttons-icons/trash-ico-dsbl.svg" alt="trash" width="16" height="16">
                </span>
+            </td>
+
+         </tr>
+
+         <tr class="tr-accent-1">
+            <td>1002</td>
+            <td>Пушкин А.С.</td>
+            <td class="text-center text-error">В поездке</td>
+            <td class="text-center text-primary">07.09.2020 12:30</td>
+            <td class="text-center text-primary">07.09.2020 17:30</td>
+            <td class="text-center text-primary">-</td>
+            <td></td>
+            <td class="text-right"> 
+              
+               <a title="Добавить поездку" class="btn-round btn-round-sm mr-1" href="?page=incoming_journal&amp;create_based=39">
+                  <img src="http://10.0.2.185/apr/themes/apr-classic/img/svg/buttons-icons/plus-circle-ico.svg" alt="add" width="16" height="16">
+               </a>
+            
+               <form style="display: inline-block;" method="post" action="?page=incoming_journal&amp;view_my_out&amp;set_back=39">
+                  <button class="btn-round btn-round-sm mr-1" title="Я вернулся">
+                     <img src="http://10.0.2.185/apr/themes/apr-classic/img/svg/buttons-icons/stay-at-home-ico.svg" alt="home" width="16" height="16">
+                  </button>
+               </form>
+            
+               <form style="display: inline-block;" method="post" action="?page=incoming_journal&amp;view_my_out&amp;cancel_out=39">
+                  <button class="btn-round btn-round-sm mr-1" title="Отменить заявку">
+                     <img src="http://10.0.2.185/apr/themes/apr-classic/img/svg/buttons-icons/undo-request-ico.svg" alt="home" width="16" height="16">
+                  </button>
+               </form>
+            
+               <a class="btn-round btn-round-sm mr-1" title="Редактировать" href="?page=incoming_journal&amp;edit=39">
+                  <img src="http://10.0.2.185/apr/themes/apr-classic/img/svg/buttons-icons/pencil-ico.svg" alt="edit" width="16" height="16">
+               </a>
+
             </td>
 
          </tr>
