@@ -532,6 +532,15 @@ textarea {
   padding: 0 22px;
 }
 
+.f-control-ico {
+  background-repeat: no-repeat;
+  background-position: calc(100% - 22px) 50%;
+}
+
+.f-control-ico--search {
+  background-image: url(../../img/svg/search-ico.svg);
+}
+
 .f-select {
   height: 48px;
   border-radius: 24px;
