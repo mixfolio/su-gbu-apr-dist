@@ -1288,6 +1288,12 @@ hr {
   margin-right: 12px;
 }
 
+.col-12 {
+  width: calc(100% - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .map {
   position: relative;
 }
