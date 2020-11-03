@@ -585,7 +585,7 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 80px;
+  height: 48px;
   background-color: #F9F9FF;
   border-radius: 16px;
   color: #9EA0DC;
@@ -903,6 +903,12 @@ hr {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .d-block {
@@ -1291,6 +1297,12 @@ hr {
 
 .col-6 {
   width: calc(50% - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.col-8 {
+  width: calc(75% - 24px);
   margin-left: 12px;
   margin-right: 12px;
 }

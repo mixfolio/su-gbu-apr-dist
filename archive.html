@@ -167,16 +167,187 @@
 
             <!-- TAB Content 1 -->
             <div class="tab-content">
-               <form class="row">
+               <!-- <form method="post" action="?page=archivarius">
+   <table class="pull-request">
+      <tbody id="pull-request">
+         <tr>
+            <td>Заявитель:</td>
+            <td><input class="form-control" type="text" value="Кириллин Г.А." disabled=""></td>
+         </tr>
+         <tr>
+            <td>Номер кабинета:</td>
+            <td><input class="form-control" type="text" value="" disabled=""></td>
+         </tr>
+         <tr>
+            <td>Телефон:</td>
+            <td><input class="form-control" type="text" value="" disabled=""></td>
+         </tr>
+         <tr>
+            <td>Электронная почта:</td>
+            <td><input class="form-control" type="text" value="kirillinga@develop.mos.ru" disabled=""></td>
+         </tr>
+         <tr>
+            <td>Срочность исполнения:</td>
+            <td><select class="form-select" name="immediate">
+                  <option value="1">Обычная срочность</option>
+                  <option value="2">Срочная</option>
+               </select></td>
+         </tr>
+         <tr>
+            <td>Тип документа</td>
+            <td><input name="request_type1" list="aboutlist" class="f-control w-100" type="text"
+                  placeholder="Начните вводить тип документа" required="">
+               <datalist id="aboutlist">
+                  <option value="Входящее письмо"></option>
+                  <option value="Исходящее письмо"></option>
+                  <option value="Входящий документ, содержащий служебную информацию ограниченного распространения">
+                  </option>
+                  <option value="Исходящий документ, содержащий служебную информацию ограниченного распространения">
+                  </option>
+                  <option
+                     value="Журнал регистрации исходящих/входящих документов, содержащих служебную информацию ограниченного распространения">
+                  </option>
+                  <option value="Исходящее письмо на обращение граждан, документы по их рассмотрению"></option>
+                  <option value="Входящее обращение граждан, документы по их рассмотрению"></option>
+                  <option value="Соглашение о сотрудничестве"></option>
+                  <option value="Приказ по основной деятельности ГБУ «АПР»"></option>
+                  <option value="Протокол оперативного совещания, поручение директора ГБУ «АПР»"></option>
+                  <option value="Протокол совещания по текущим вопросам"></option>
+                  <option value="Доверенность"></option>
+                  <option
+                     value="Договор(контракт) аренды(субаренды), безвозмездного пользования имуществом; документы к нему">
+                  </option>
+                  <option
+                     value="Годовой план, государственное задание и изменения к ним (по месту утверждения, в других организациях)">
+                  </option>
+                  <option value="Извещение"></option>
+                  <option value="Договор (контракт)"></option>
+                  <option value="Соглашение о предоставлении субсидии"></option>
+                  <option
+                     value="Выписка из лицевого счета, отчет о состоянии лицевого счета, отчет о состоянии лицевого счета с приложением платёжных документов">
+                  </option>
+                  <option value="Акт сверки"></option>
+                  <option value="Отчет о дебиторской задолженности в Главконтроль"></option>
+                  <option value="Документ  учётной политики"></option>
+                  <option value="Бухгалтерская (финансовая) отчетность – годовая или промежуточная"></option>
+                  <option value="Отчет по целевой субсидии"></option>
+                  <option
+                     value="Регистр бухгалтерского учёта (главная книга, журналы-ордера, мемориальные ордера, журналы операций по счетам, оборотные ведомости, накопительные ведомости, реестры, книги(карточки), ведомости, инвентарные списки)">
+                  </option>
+                  <option
+                     value="Первичный учетный документ и связанные с ним оправдательные документы (кассовые документы и книги, банковские документы, корешки денежных чековых книжек, ордера, табели, извещения банков и переводные требования, акты о приеме, сдаче, списании имущества и материалов, квитанции накладные и авансовые отчеты, переписка">
+                  </option>
+                  <option
+                     value="Документ(планы, отчеты, протоколы, акты, справки, докладные записки, переписка) о проведении проверок хозяйственной деятельности">
+                  </option>
+                  <option value="Переписка по вопросам бухгалтерского учёта"></option>
+                  <option value="Журнал расчетов с подотчетными лицами, исполнительные листы"></option>
+                  <option
+                     value="Документ (сводные, расчетные(расчетно-платёжные) платёжные ведомости и документы к ним, расчетные листы на выдачу заработной платы, пособий, гонораров, материальной помощи и других выплат) о получении заработной платы и других выплат">
+                  </option>
+                  <option value="Лицевой счет работников, карточка-справка по заработной плате"></option>
+                  <option value="Документ о выплате пособий, оплате листков нетрудоспособности, материальной помощи">
+                  </option>
+                  <option value="Исполнительный лист (исполнительный документ) по удержанию заработной платы"></option>
+                  <option
+                     value="Договор гражданско-правового характера о выполнении работ, оказания услуг физическими лицами, акты сдачи-приёмки выполненных работ, оказанных услуг">
+                  </option>
+                  <option value="Расчет по страховым взносам (годовой, квартальный)"></option>
+                  <option
+                     value="Карточка индивидуального учёта сумм начисленных выплат и иных вознаграждений и сумм начисленных страховых взносов">
+                  </option>
+                  <option value="Налоговая декларация (расчёт)"></option>
+                  <option
+                     value="Документ (расчёт сумм налога, сообщения о невозможности удержать налог, регистры налогового учёта) по налогу на доходы физических лиц">
+                  </option>
+                  <option value="Справка о доходах и суммах налога физического лица"></option>
+                  <option value="Реестр сведений о доходах физических лиц, представляемых налоговыми агентами"></option>
+                  <option
+                     value="Документ (переписка, уведомление, требование, акт, решение, постановление, возражение, жалоба, заявление) о разногласиях по вопросам налогообложения, взимания налогов и сборов в бюджеты всех уровней">
+                  </option>
+                  <option value="Счёт-фактура"></option>
+                  <option
+                     value="Документ (протокол заседания инвентаризационной комиссии, инвентаризационная опись, список, акт, ведомость) об инвентаризации активов, обязательств">
+                  </option>
+                  <option
+                     value="Документ (протокол, акт, справка, расчет, ведомость, заключение) о переоценке, определении амортизации, списании основных средств и нематериальных активов">
+                  </option>
+                  <option
+                     value="Статистический отчёт (годовой и большей периодичностью, единовременные или полугодовой, квартальный или месячный)">
+                  </option>
+                  <option value="Табель (график), журнал учёта рабочего времени"></option>
+                  <option value="Реквизиты сотрудников для перечисления заработной платы"></option>
+                  <option value="Акт по результатам комплексного обследования территорий"></option>
+                  <option
+                     value="Результат исследований коммерческих организаций, оказывающих услуги для Управления по договорам">
+                  </option>
+                  <option value="Годовой отчет по государственному заданию, выполненный Управлением по договорам">
+                  </option>
+                  <option value="Годовой отчет по государственному заданию, выполненное Управлением"></option>
+                  <option value="Квартальный отчет по государственному заданию, выполненное Управлением"></option>
+                  <option
+                     value="Научно-исследовательское, маркетинговое и другие исследования заказываемые у сторонних организаций">
+                  </option>
+                  <option value="Локальный нормативный акт ГБУ «АПР»"></option>
+                  <option value="Штатное расписание ГБУ «АПР»"></option>
+                  <option value="Положение о структурных подразделениях"></option>
+                  <option value="Должностная инструкция"></option>
+                  <option
+                     value="Приказ по личному составу (к) прием, увольнение, кадровое перемещение, совмещение, совместительство, премирование">
+                  </option>
+                  <option value="Основание к приказам по личному составу (к)"></option>
+                  <option
+                     value="Журнал регистрации приказов по личному составу (лс). Все виды отпусков, командировки, дисциплинарные взыскания">
+                  </option>
+                  <option value="Трудовая книжка сотрудника"></option>
+                  <option value="Книга учёта движения трудовых книжек и вкладышей к ним"></option>
+                  <option value="Личная папка работника с информацией о трудовой деятельности в ГБУ «АПР»"></option>
+                  <option value="Личная карточка работника формы Т-2"></option>
+                  <option value="Журнал регистрации выдачи справок, копий трудовых книжек"></option>
+                  <option value="Трудовой договор, дополнительные соглашения о его изменении"></option>
+                  <option value="Журнал регистрации приказов по личному составу (к)"></option>
+                  <option value="Журнал регистрации приказов по личному составу (лс)"></option>
+                  <option
+                     value="Протокол заседания Комиссии по рассмотрению ключевых показателей эффективности работников ГБУ «АПР» (в том числе служебные записки и отчеты">
+                  </option>
+                  <option value="Переписка с организациями о приёме бывших гос. служащих"></option>
+                  <option value="Устав ГБУ «АПР»"></option>
+                  <option value="Доверенность, выданная руководителем"></option>
+                  <option value="Положение о контрактной службе"></option>
+                  <option value="План-график"></option>
+                  <option
+                     value="Документ (извещение, положение, протокол) о закупках отдельными видами юридических лиц">
+                  </option>
+                  <option value="Годовой отчет по государственному заданию, выполненный Учреждением"></option>
+                  <option value="Квартальный отчет по государственному заданию, выполненному Учреждением"></option>
+                  <option value="Иное"></option>
+               </datalist>
+            </td>
+         </tr>
+         <tr>
+            <td>Описание</td>
+            <td><textarea name="description1" placeholder="Описание документа" required=""></textarea></td>
+         </tr>
+      </tbody>
+   </table>
+   <input id="pull_request" type="hidden" name="pull_request" value="1">
+   <input type="submit" class="btn btn-primary">
+</form>
+
+<button onclick="AddTr()" class="btn btn-primary">+</button>
+
+ -->
+
+<div class="row">
 
    <div class="col-6 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Архивный номер документа</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+      <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">Архивный номер документа</label>
+      <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
    </div>
 
    <div class="col-6 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Название документа</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+      <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Название документа</label>
+      <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-6 mb-3">
@@ -188,7 +359,23 @@
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Число страниц</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите число">
    </div>
-   
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+      <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="select-podved">Подведомственность</label>
+      <select id=select-podved class="f-select w-100">
+         <option selected="">Выбрать</option>
+         <option value="1">Выбор 1</option>
+         <option value="2">Выбор 2</option>
+         <option value="3">Выбор 3</option>
+       </select>
+      <!-- <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст"> -->
+   </div>
+
 
    <div class="col-6 mb-3">
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Расположение</label>
@@ -199,8 +386,8 @@
       <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Примечание</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
-
-   <div class="col-12 mb-3">
+   
+   <div class="col-8 mb-3">
       <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
       <input id="subject" name="subject" class="f-control w-100 hide" type="file" placeholder="Введите текст">
       <div class="label-attachment">
@@ -208,11 +395,11 @@
          <p>перетащите или прикрепите файлы</p>
       </div>
    </div>
-   
-   <div class="w-100 text-center mt-2">
+
+   <div class="col-3 text-center mt-3">
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
-</form>
+</div>
             </div>
 
             <!-- TAB Content 2 -->
