@@ -102,6 +102,10 @@
   margin-left: 3rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 1.5rem;
 }
@@ -638,6 +642,16 @@ textarea {
   color: #000000;
 }
 
+.f-check-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .f-check-input:checked + .f-check-label::after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -994,6 +1008,11 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.align-self-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .d-block {

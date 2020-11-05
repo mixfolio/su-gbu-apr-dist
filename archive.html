@@ -451,60 +451,80 @@
             <!-- TAB Content 3 -->
             <div class="tab-content">
                <form class="row">
+   <!-- Column-1 -->
+   <div class="col-6">
+      <div class="row">
+         
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">ФИО сотрудника</label>
+            <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+         </div>
 
-   <div class="col-6 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">ФИО сотрудника</label>
-      <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер кабинета</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+         </div>
+      
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Телефон сотрудника</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="+7(926)987-65-43">
+         </div>
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">E-mail сотрудника</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="pushkinas@mail.ru">
+         </div>
+
+      </div>
    </div>
+   <!-- Column-2 -->
+   <div class="col-6">
+      <div class="row">
 
-   <div class="col-6 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Срочность</label>
-      <div class="d-flex mt-2">
-         <div class="f-check mr-6">
-            <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
-            <label class="f-check-label" for="urgent"><span>Срочная</span></label>
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Срочность</label>
+            <div class="f-check-group border">
+               <div class="f-check mr-6">
+                  <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
+                  <label class="f-check-label" for="urgent"><span>Срочная</span></label>
+               </div>
+               <div class="f-check">
+                  <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
+                  <label class="f-check-label" for="nonUrgent"><span>Обычной срочности</span></label>
+               </div>
+            </div>
          </div>
-         <div class="f-check">
-            <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
-            <label class="f-check-label" for="nonUrgent"><span>Обычной срочности</span></label>
+
+         <div class="col-6 mb-3 d-flex justify-content-between">
+            <div class="w-100">
+               <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+               <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо">
+            </div>
+            <button class="btn-round align-self-end ml-1" style="margin-bottom: 6px;"><img src="./img/svg/trash.svg" alt="trash"></button>
          </div>
+
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо от прокурора">
+         </div>
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+            <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
+         </div>
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+         </div>
+
       </div>
    </div>
 
-   <div class="col-6 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер кабинета</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
-   </div>
+   
 
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо">
-   </div>
 
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо от прокурора">
-   </div>
-
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Телефон сотрудника</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="+7(926)987-65-43">
-   </div>
-
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">E-mail сотрудника</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="pushkinas@mail.ru">
-   </div>
-
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
-      <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
-   </div>
-
-   <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
-      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
-   </div>
 
    <div class="mt-3 text-right w-100">
       <button class="btn btn-grey">Добавить документ</button>
