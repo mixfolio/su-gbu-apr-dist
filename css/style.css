@@ -62,6 +62,22 @@
   margin-right: .5rem;
 }
 
+.mr-2 {
+  margin-right: 1rem;
+}
+
+.mr-3 {
+  margin-right: 1.5rem;
+}
+
+.mr-4 {
+  margin-right: 2rem;
+}
+
+.mr-5 {
+  margin-right: 2.5rem;
+}
+
 .mr-6 {
   margin-right: 3rem;
 }
@@ -165,6 +181,17 @@
 
 .btn-primary:hover {
   background-color: #3338b2;
+}
+
+.btn-grey {
+  background-color: #E0E0E0;
+  border: #E0E0E0;
+  color: #000;
+}
+
+.btn-grey:hover {
+  background-color: #c7c7c7;
+  color: #000;
 }
 
 .btn-round {
@@ -609,6 +636,64 @@ textarea {
 
 .temp-holder::placeholder {
   color: #000000;
+}
+
+.f-check-input:checked + .f-check-label::after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.f-check-input {
+  display: none;
+}
+
+.f-check-label {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-family: 'Futura PT';
+  font-size: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.f-check-label span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.f-check-label:before {
+  content: '';
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 16px;
+          flex: 0 0 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #E8E9FE;
+  margin-right: 8px;
+}
+
+.f-check-label:after {
+  position: absolute;
+  content: '';
+  top: 6.5px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #4C51CC;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
 }
 
 .card {
