@@ -1387,8 +1387,20 @@ hr {
   margin-right: -12px;
 }
 
+.col-1 {
+  width: calc((100% / 12) - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.col-2 {
+  width: calc((100% / 6) - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .col-3 {
-  width: calc(25% - 24px);
+  width: calc((100% / 4) - 24px);
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -1413,6 +1425,20 @@ hr {
 
 .col-12 {
   width: calc(100% - 24px);
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.col-10pc {
+  width: calc(10% - 24px);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.col-30pc {
+  width: calc(30% - 24px);
   margin-left: 12px;
   margin-right: 12px;
 }
