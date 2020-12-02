@@ -391,9 +391,9 @@
       <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
       
       <div class="label-attachment">
-         <input id="subject" name="subject" class="f-control w-100 input-attachment" type="file" placeholder="Введите текст">
+         <input id="subject" name="subject" class="f-control w-100 input-attachment" type="file" onchange="on_file_select()" placeholder="Введите текст">
          <img class="d-block" src="img/svg/mailing-icons/box-ico.svg" alt="box">
-         <p>перетащите или прикрепите файлы</p>
+         <p id="add_doc">перетащите или прикрепите файлы</p>
       </div>
    </div>
 
@@ -401,6 +401,17 @@
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
 </div>
+
+<script>
+   function on_file_select() {
+      if (document.getElementById('subject').files.length != 0) {
+         document.getElementById('add_doc').innerHTML="Выбран файл "+document.getElementById('subject').files[0].name;
+      } else {
+         document.getElementById('add_doc').innerHTML="перетащите или прикрепите документ";
+      }
+   }
+   on_file_select();
+</script>
             </div>
 
             <!-- TAB Content 2 -->
