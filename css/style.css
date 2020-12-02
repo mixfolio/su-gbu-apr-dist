@@ -601,7 +601,16 @@ textarea {
           appearance: none;
 }
 
+.input-attachment {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .label-attachment {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -980,10 +989,11 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.sticky {
+.sticky th {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  background: #dedede;
 }
 
 .d-flex {
