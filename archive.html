@@ -387,7 +387,7 @@
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
    
-   <div class="col-8 mb-3">
+   <div class="col-8 mb-6">
       <label class="f-label f-label-ico f-label-ico--attachment" for="attachment">Файлы</label>
       
       <div class="label-attachment">
@@ -397,11 +397,17 @@
       </div>
    </div>
 
-   <div class="col-3 text-center mt-3">
+   <div class="col-3 text-right mt-3">
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
 
-   <div class="progress"><div class="progress-done bg-error" data-done="70">Загружено 100 МБ из 900 Мб</div></div>
+   <!-- <progress class="mx-col" max="100" value="25">
+      Загружено на <span id="value">25</span>%
+   </progress> -->
+
+   <div id="progress" class="progress mx-col"><div id="value" class="progress-done bg-error" data-done="47"><span class="progress-text">Загружено 100 МБ из 900 Мб</span></div></div>
+
+   <!-- <div class="progress mx-col"><div class="progress-done bg-error" data-done="70">Загружено 100 МБ из 900 Мб</div></div> -->
 </div>
 
 
@@ -416,9 +422,8 @@
    }
    on_file_select();
 
-
+   // progress-bar
    const progress = document.querySelector('.progress-done');
-
    setTimeout(() => {
       progress.style.width = progress.getAttribute('data-done') + '%';
       progress.style.opacity = 1;
