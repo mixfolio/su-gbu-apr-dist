@@ -1067,6 +1067,30 @@ hr {
   color: #bdbdbd;
 }
 
+.bg-primary {
+  background-color: #4C51CC !important;
+}
+
+.bg-secondary {
+  background-color: #4CCCA5 !important;
+}
+
+.bg-info {
+  background-color: #63BDFF !important;
+}
+
+.bg-danger {
+  background-color: #FF9900 !important;
+}
+
+.bg-success {
+  background-color: #00B55E !important;
+}
+
+.bg-error {
+  background-color: #CC4C63 !important;
+}
+
 .main {
   position: relative;
   width: 100%;
@@ -1468,4 +1492,32 @@ hr {
   width: 344px;
   top: 48px;
   left: 24px;
+}
+
+.progress {
+  width: 100%;
+  height: 24px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.progress-done {
+  height: 100%;
+  background-color: #4c51cc;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  color: #fff;
 }

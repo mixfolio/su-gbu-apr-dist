@@ -400,7 +400,11 @@
    <div class="col-3 text-center mt-3">
       <button class="btn btn-primary">Добавить документ в архив</button>
    </div>
+
+   <div class="progress"><div class="progress-done bg-error" data-done="70">Загружено 100 МБ из 900 Мб</div></div>
 </div>
+
+
 
 <script>
    function on_file_select() {
@@ -411,6 +415,16 @@
       }
    }
    on_file_select();
+
+
+   const progress = document.querySelector('.progress-done');
+
+   setTimeout(() => {
+      progress.style.width = progress.getAttribute('data-done') + '%';
+      progress.style.opacity = 1;
+
+   }, 500);
+   
 </script>
             </div>
 
