@@ -353,6 +353,14 @@ td {
   color: #333333;
 }
 
+.sticky th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: 0;
+  background: #dedede;
+}
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -761,6 +769,56 @@ textarea {
   font-size: 0.875rem;
 }
 
+.page-item:first-child .page-link {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.pagination {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 30px;
+  padding-left: 0;
+  list-style: none;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.page-link {
+  padding: .375rem .75rem;
+  position: relative;
+  display: block;
+  background-color: #fff;
+  color: #adadad;
+  font-family: 'Futura PT';
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
+}
+
+.page-link:hover {
+  color: #4C51CC;
+}
+
+.page-link:hover svg {
+  stroke: #4C51CC;
+}
+
+.page-link.active {
+  font-family: 'Futura PT Demi';
+  font-weight: 500;
+  color: #4C51CC;
+}
+
 .signin {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,13 +1050,6 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.sticky th {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background: #dedede;
 }
 
 .d-flex {
