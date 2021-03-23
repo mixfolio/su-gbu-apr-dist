@@ -52,6 +52,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ruble:before {
+  content: "\e942";
+}
+
 .icon-image-load:before {
   content: "\e900";
 }
@@ -104,7 +108,7 @@
   content: "\e90c";
 }
 
-.icon-writing-1:before {
+.icon-writing:before {
   content: "\e90d";
 }
 
@@ -112,7 +116,7 @@
   content: "\e90e";
 }
 
-.icon-add-file:before {
+.icon-file-add:before {
   content: "\e90f";
 }
 
@@ -582,6 +586,9 @@
 .btn-round:hover {
   -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .btn-round-sm {
@@ -590,6 +597,9 @@
           flex: 0 0 32px;
   width: 32px;
   height: 32px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #4C51CC;
 }
 
 .btn-rect {
