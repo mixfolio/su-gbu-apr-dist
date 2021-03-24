@@ -52,272 +52,280 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-ruble:before {
-  content: "\e942";
-}
-
-.icon-image-load:before {
+.icon-address:before {
   content: "\e900";
 }
 
-.icon-list-empty:before {
+.icon-archive:before {
   content: "\e901";
 }
 
-.icon-exit:before {
+.icon-area:before {
   content: "\e902";
 }
 
-.icon-resume:before {
+.icon-arr-next:before {
   content: "\e903";
 }
 
-.icon-book-edit:before {
+.icon-arr-prev:before {
   content: "\e904";
 }
 
-.icon-burger:before {
+.icon-art:before {
   content: "\e905";
 }
 
-.icon-archive:before {
+.icon-bar-chart:before {
   content: "\e906";
 }
 
-.icon-arr-next:before {
+.icon-bars-graphic:before {
   content: "\e907";
 }
 
-.icon-arr-prev:before {
+.icon-bell:before {
   content: "\e908";
 }
 
-.icon-goal:before {
+.icon-book-edit:before {
   content: "\e909";
 }
 
-.icon-address:before {
+.icon-box:before {
   content: "\e90a";
 }
 
-.icon-file-search:before {
+.icon-buildings:before {
   content: "\e90b";
 }
 
-.icon-file-time:before {
+.icon-burger:before {
   content: "\e90c";
 }
 
-.icon-writing:before {
+.icon-calendar:before {
   content: "\e90d";
 }
 
-.icon-file-edit:before {
+.icon-chevron:before {
   content: "\e90e";
 }
 
-.icon-file-add:before {
+.icon-clip:before {
   content: "\e90f";
 }
 
-.icon-file-done:before {
+.icon-dots:before {
   content: "\e910";
 }
 
-.icon-file-del:before {
+.icon-email:before {
   content: "\e911";
 }
 
-.icon-pencil:before {
+.icon-exit:before {
   content: "\e912";
 }
 
-.icon-art:before {
+.icon-eye-closed:before {
   content: "\e913";
 }
 
-.icon-list:before {
+.icon-eye-open:before {
   content: "\e914";
 }
 
-.icon-buildings:before {
+.icon-file-add:before {
   content: "\e915";
 }
 
-.icon-share:before {
+.icon-file-attach:before {
   content: "\e916";
 }
 
-.icon-file:before {
+.icon-file-del:before {
   content: "\e917";
 }
 
-.icon-box:before {
+.icon-file-done:before {
   content: "\e918";
 }
 
-.icon-clip:before {
+.icon-file-edit:before {
   content: "\e919";
 }
 
-.icon-refer:before {
+.icon-file-percent:before {
   content: "\e91a";
 }
 
-.icon-letter-open:before {
+.icon-file-search:before {
   content: "\e91b";
 }
 
-.icon-receiver:before {
+.icon-file-time:before {
   content: "\e91c";
 }
 
-.icon-trash:before {
+.icon-file:before {
   content: "\e91d";
 }
 
-.icon-phone-info:before {
+.icon-form:before {
   content: "\e91e";
 }
 
-.icon-eye-closed:before {
+.icon-gear:before {
   content: "\e91f";
 }
 
-.icon-eye-open:before {
+.icon-gmo:before {
   content: "\e920";
 }
 
-.icon-phone-call:before {
+.icon-goal:before {
   content: "\e921";
 }
 
-.icon-user-key:before {
+.icon-grid:before {
   content: "\e922";
 }
 
-.icon-key:before {
+.icon-handle-care:before {
   content: "\e923";
 }
 
-.icon-form:before {
+.icon-home:before {
   content: "\e924";
 }
 
-.icon-letter:before {
+.icon-image-load:before {
   content: "\e925";
 }
 
-.icon-lock:before {
+.icon-industry:before {
   content: "\e926";
 }
 
-.icon-file-percent:before {
+.icon-key:before {
   content: "\e927";
 }
 
-.icon-money-bag:before {
+.icon-lens:before {
   content: "\e928";
 }
 
-.icon-shop-list:before {
+.icon-letter-open:before {
   content: "\e929";
 }
 
-.icon-location:before {
+.icon-letter:before {
   content: "\e92a";
 }
 
-.icon-area:before {
+.icon-list-empty:before {
   content: "\e92b";
 }
 
-.icon-map:before {
+.icon-list:before {
   content: "\e92c";
 }
 
-.icon-gear:before {
+.icon-location:before {
   content: "\e92d";
 }
 
-.icon-file-attach:before {
+.icon-lock:before {
   content: "\e92e";
 }
 
-.icon-email:before {
+.icon-map:before {
   content: "\e92f";
 }
 
-.icon-gmo:before {
+.icon-menu:before {
   content: "\e930";
 }
 
-.icon-home:before {
+.icon-money-bag:before {
   content: "\e931";
 }
 
-.icon-private:before {
+.icon-pencil:before {
   content: "\e932";
 }
 
-.icon-industry:before {
+.icon-phone-call:before {
   content: "\e933";
 }
 
-.icon-handle-care:before {
+.icon-phone-info:before {
   content: "\e934";
 }
 
-.icon-dots:before {
+.icon-plus:before {
   content: "\e935";
 }
 
-.icon-salary:before {
+.icon-private:before {
   content: "\e936";
 }
 
-.icon-bars-graphic:before {
+.icon-profit:before {
   content: "\e937";
 }
 
-.icon-profit:before {
+.icon-receiver:before {
   content: "\e938";
 }
 
-.icon-menu:before {
+.icon-refer:before {
   content: "\e939";
 }
 
-.icon-user:before {
+.icon-resume:before {
   content: "\e93a";
 }
 
-.icon-lens:before {
+.icon-ruble:before {
   content: "\e93b";
 }
 
-.icon-bar-chart:before {
+.icon-salary:before {
   content: "\e93c";
 }
 
-.icon-grid:before {
+.icon-share:before {
   content: "\e93d";
 }
 
-.icon-chevron:before {
+.icon-shevron-next:before {
   content: "\e93e";
 }
 
-.icon-plus:before {
+.icon-shevron-prev:before {
   content: "\e93f";
 }
 
-.icon-calendar:before {
+.icon-shop-list:before {
   content: "\e940";
 }
 
-.icon-bell:before {
+.icon-trash:before {
   content: "\e941";
+}
+
+.icon-user-key:before {
+  content: "\e942";
+}
+
+.icon-user:before {
+  content: "\e943";
+}
+
+.icon-writing:before {
+  content: "\e944";
 }
 
 .text-center {
@@ -1281,12 +1289,15 @@ textarea {
   transition: All 0.3s ease 0s;
 }
 
-.page-link:hover {
-  color: #4C51CC;
+.page-link span {
+  color: #adadad;
 }
 
-.page-link:hover svg {
-  stroke: #4C51CC;
+.page-link span:hover {
+  color: #4C51CC;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
 }
 
 .page-link.active {
@@ -1426,8 +1437,19 @@ textarea {
 }
 
 .header-avatar__pict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 48px;
   height: 48px;
+  font-size: 20px;
+  color: #4C51CC;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -1469,24 +1491,13 @@ textarea {
 
 .user-menu .profile-link::before,
 .user-menu .exit-link::before {
-  content: '';
-  width: 16px;
-  height: 16px;
+  color: #4C51CC;
+  font-size: 16px;
   margin-right: 12px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .user-menu .profile-link {
   margin-bottom: 16px;
-}
-
-.user-menu .profile-link::before {
-  background-image: url(../img/svg/user-ico.svg);
-}
-
-.user-menu .exit-link::before {
-  background-image: url(../img/svg/exit-ico.svg);
 }
 
 .header-avatar:hover .user-menu {
@@ -1972,6 +1983,18 @@ hr {
   border-radius: 8px;
   overflow: hidden;
   margin-right: 8px;
+  font-size: 20px;
+  color: #4C51CC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EBECF8;
 }
 
 .user__role {
