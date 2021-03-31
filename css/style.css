@@ -1292,6 +1292,13 @@ textarea {
   transition: All 0.3s ease 0s;
 }
 
+.page-link:hover {
+  color: #4C51CC;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
+}
+
 .page-link span {
   color: #adadad;
 }
@@ -1435,8 +1442,8 @@ textarea {
   margin-left: 3rem;
   background-color: #ffffff;
   border-radius: 24px;
-  cursor: pointer;
   background: #F5F6FF;
+  cursor: pointer;
 }
 
 .header-avatar__pict {
@@ -1478,29 +1485,38 @@ textarea {
   transition: All 0.3s ease 0s;
 }
 
-.user-menu .profile-link,
-.user-menu .exit-link {
+.user-menu li {
+  margin-bottom: 16px;
+}
+
+.user-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.profile-link {
   font-family: 'Futura PT';
   font-size: 1rem;
   text-decoration: none;
-  color: #4B4D84;
+  color: #bdbdbd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
 }
 
-.user-menu .profile-link::before,
-.user-menu .exit-link::before {
-  color: #4C51CC;
+.profile-link:hover {
+  color: #4B4D84;
+}
+
+.profile-link::before {
+  color: #bdbdbd;
   font-size: 16px;
   margin-right: 12px;
-}
-
-.user-menu .profile-link {
-  margin-bottom: 16px;
 }
 
 .header-avatar:hover .user-menu {
@@ -1806,6 +1822,12 @@ hr {
       -ms-flex: 0 0 64px;
           flex: 0 0 64px;
   padding: 32px 24px;
+}
+
+.sidebar-right.show-menu .icon-arr-next::before {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .show-menu .sbar--show {

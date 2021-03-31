@@ -8,6 +8,49 @@
    <title>Система управления ГБУ АПР</title>
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
+   <!-- <style>
+      /* .welcome {
+         background:#fff !important
+      } */
+      .background {
+         position: absolute;
+         width: 100%;
+         bottom: 0px;
+      }
+      .waves {
+        position: relative;
+        width: 100%;
+        /*Fix for safari gap*/
+        min-height: 300px;
+        max-height: 350px;
+        bottom: -5px;
+      }
+      /* Animation */
+      .parallax>use {
+        animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+      }
+      .parallax>use:nth-child(1) {
+        animation-delay: -9s;
+        animation-duration: 21s;
+      }
+      .parallax>use:nth-child(2) {
+        animation-delay: -16s;
+        animation-duration: 30s;
+      }
+      .parallax>use:nth-child(3) {
+        animation-delay: -8s;
+        animation-duration: 39s;
+      }
+      @keyframes move-forever {
+        0% {
+          transform: translate3d(-90px, 0, 0);
+        }
+        100% {
+          transform: translate3d(85px, 0, 0);
+        }
+      }
+      </style> -->
+
 </head>
 
 <body>
@@ -20,7 +63,6 @@
          <input class="f-control icon-user" name="search" type="text" placeholder="Поиск">
       </form>
       <div class="header-avatar">
-         <a>
             <div class="header-avatar__pict icon-user">
                <!-- <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico"> -->
             </div>
@@ -29,11 +71,9 @@
                   <a class="profile-link icon-user" href="profile-2.html">Профиль</a>
                </li>
                <li>
-                  <a class="exit-link icon-exit" href="index.html">Выйти</a>
+                  <a class="profile-link icon-exit" href="index.html">Выйти</a>
                </li>
             </ul>
-         </a>
-         
          <p class="header-avatar__text hide">Родионов П.В.</p>
       </div>
    </div>
@@ -106,6 +146,7 @@
 
       <main class="main">
          <section class="welcome">
+            
             <div class="welcome__dialog">
                <div class="welcome__pict">
                   <img src="img/svg/welcome-img.svg" alt="welcome">
@@ -113,10 +154,22 @@
                <div class="welcome__title">Добро пожаловать на портал АПР!</div>
                <a class="btn btn-primary" href="home.html">Начать работу</a>
             </div>
-
-
-
+            <!-- <div class="background">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                  class="waves">
+                  
+                  <defs>
+                     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                  </defs>
+                  <g class="parallax">
+                     <use xlink:href="#gentle-wave" x="48" y="0" fill="#4C51CB" fill-opacity=".04"></use>
+                     <use xlink:href="#gentle-wave" x="48" y="3" fill="#4C51CB" fill-opacity=".04"></use>
+                     <use xlink:href="#gentle-wave" x="48" y="5" fill="#4C51CB" fill-opacity=".04"></use>
+                  </g>
+               </svg>
+            </div> -->
          </section>
+
          <div class="btn-burger icon-burger">
             <!-- <img src="img/svg/burger-ico.svg" alt="burger"> -->
 
@@ -127,7 +180,7 @@
    <div class="sidebar-right__menu">
       
       <div class="sidebar__toggler mb-4">
-         <div class="btn-round text-primary icon-arr-prev" id="sidebarBtn">
+         <div class="btn-round text-primary icon-arr-next" id="sidebarBtn">
             <!-- <img src="img/svg/arrow-ico.svg" alt="arrow"> -->
          </div>
          <p class="sidebar__toggler-text sbar--show ml-2">Свернуть</p>
