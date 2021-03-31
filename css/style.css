@@ -1519,6 +1519,10 @@ textarea {
   margin-right: 12px;
 }
 
+.profile-link:hover::before {
+  color: #4C51CC;
+}
+
 .header-avatar:hover .user-menu {
   display: block;
 }
