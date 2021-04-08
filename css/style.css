@@ -613,6 +613,11 @@
           transform: rotate(90deg);
 }
 
+.btn-primary {
+  background: #4C51CC;
+  color: #ffffff;
+}
+
 .btn-rect {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -766,6 +771,10 @@ td {
 
 .table-info--show {
   display: table;
+}
+
+.phone-book tbody tr:nth-child(2n-1) {
+  background-color: #f1f2ff;
 }
 
 .tabs-list {
@@ -926,97 +935,6 @@ textarea {
   font-size: 20px;
   color: #4C51CC;
   margin-right: 8px;
-}
-
-.f-label-ico {
-  padding-left: 30px;
-  position: relative;
-}
-
-.f-label-ico::before {
-  position: absolute;
-  left: 0;
-  top: -4px;
-}
-
-.f-label-ico--mailFrom::before {
-  content: url(../img/svg/mailing-icons/mail-from-ico.svg);
-}
-
-.f-label-ico--mailTo::before {
-  content: url(../img/svg/mailing-icons/mail-to-ico.svg);
-}
-
-.f-label-ico--subject::before {
-  content: url(../img/svg/mailing-icons/open-envelop-ico.svg);
-}
-
-.f-label-ico--message::before {
-  content: url(../img/svg/mailing-icons/envelope-ico.svg);
-}
-
-.f-label-ico--attachment::before {
-  content: url(../img/svg/mailing-icons/clip-ico.svg);
-}
-
-.f-label-ico--departament::before {
-  content: url(../img/svg/profile-icons/home-ico.svg);
-}
-
-.f-label-ico--position::before {
-  content: url(../img/svg/profile-icons/position-ico.svg);
-}
-
-.f-label-ico--accessPerm::before {
-  content: url(../img/svg/profile-icons/lock-ico.svg);
-}
-
-.f-label-ico--userMail::before {
-  content: url(../img/svg/profile-icons/envelope-ico.svg);
-}
-
-.f-label-ico--cityPhone::before {
-  content: url(../img/svg/profile-icons/phone-ico.svg);
-}
-
-.f-label-ico--mobPhone::before {
-  content: url(../img/svg/profile-icons/mobile-phone-ico.svg);
-}
-
-.f-label-ico--userLogin::before {
-  content: url(../img/svg/profile-icons/user-key-ico.svg);
-}
-
-.f-label-ico--userPass::before {
-  content: url(../img/svg/profile-icons/key-ico.svg);
-}
-
-.f-label-ico--userPhoto::before {
-  content: url(../img/svg/profile-icons/user-photo-ico.svg);
-}
-
-.f-label-ico--user::before {
-  content: url(../img/svg/form-label-icons/user-ico.svg);
-}
-
-.f-label-ico--building::before {
-  content: url(../img/svg/form-label-icons/building-ico.svg);
-}
-
-.f-label-ico--time::before {
-  content: url(../img/svg/form-label-icons/calendar-ico.svg);
-}
-
-.f-label-ico--goal::before {
-  content: url(../img/svg/form-label-icons/goal-ico.svg);
-}
-
-.f-label-ico--address::before {
-  content: url(../img/svg/form-label-icons/address-ico.svg);
-}
-
-.f-label-ico--desc::before {
-  content: url(../img/svg/form-label-icons/writing-ico.svg);
 }
 
 .f-control {
@@ -1211,7 +1129,7 @@ textarea {
 }
 
 .form-check-label::after {
-  content: url(../../img/svg/check-ico.svg);
+  content: url(../img/svg/check-ico.svg);
   top: 0;
   left: 0;
   position: absolute;
@@ -1779,13 +1697,6 @@ hr {
   margin-bottom: 1.5rem;
   color: #bdbdbd;
   text-decoration: none;
-  -webkit-transition: All 0.3s ease 0s;
-  -o-transition: All 0.3s ease 0s;
-  transition: All 0.3s ease 0s;
-}
-
-.nav-link svg {
-  margin: 11px;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
