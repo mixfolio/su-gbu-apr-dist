@@ -773,8 +773,12 @@ td {
   display: table;
 }
 
-.phone-book tbody tr:nth-child(2n-1) {
+.phone-book tbody td:nth-last-child(-n+4) {
   background-color: #f1f2ff;
+}
+
+.phone-book tbody tr:nth-child(2n+1) td {
+  background-color: #fff;
 }
 
 .tabs-list {
@@ -913,8 +917,15 @@ td {
 }
 
 textarea {
+  font-family: inherit;
+  font-size: inherit;
   resize: none;
-  vertical-align: middle;
+}
+
+select,
+option {
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .f-label {
@@ -938,12 +949,13 @@ textarea {
 }
 
 .f-control {
-  height: 48px;
   border: none;
   border-radius: 24px;
   background-color: #f9f9f9;
-  font-size: 1rem;
-  padding: 0 22px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 22px;
 }
 
 .f-control-ico {
@@ -959,7 +971,7 @@ textarea {
   height: 48px;
   border-radius: 24px;
   background-color: #f9f9f9;
-  font-size: 1rem;
+  font-size: 18px;
   padding: 0 1.75rem 0 22px;
   -webkit-appearance: none;
      -moz-appearance: none;
