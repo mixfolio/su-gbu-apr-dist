@@ -1148,6 +1148,51 @@ option {
   display: none;
 }
 
+.vscomp-ele {
+  max-width: none;
+}
+
+.vscomp-wrapper.focused .vscomp-toggle-button,
+.vscomp-wrapper:focus .vscomp-toggle-button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.vscomp-dropbox {
+  -webkit-box-shadow: 0 3px 16px rgba(76, 81, 204, 0.15);
+          box-shadow: 0 3px 16px rgba(76, 81, 204, 0.15);
+}
+
+.vscomp-toggle-button {
+  border-radius: 24px;
+  padding: 14px 30px 14px 22px;
+  border: none;
+  background-color: #f9f9f9;
+}
+
+.vscomp-value {
+  font-family: 'Futura PT Book';
+  font-size: 18px;
+}
+
+.vscomp-arrow {
+  right: 8px;
+}
+
+.vscomp-arrow::after {
+  border-right-color: #4C51CC;
+  border-bottom-color: #4C51CC;
+  /* border: 2px solid transparent; */
+}
+
+.vscomp-option.selected {
+  background-color: #F1F2FF;
+}
+
+.vscomp-option.focused {
+  background-color: #D9DAFF;
+}
+
 .card {
   display: block;
   background-color: #fff;
