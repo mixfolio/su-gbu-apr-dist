@@ -1803,15 +1803,6 @@ hr {
           transform: rotate(180deg);
 }
 
-.icon-plus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .show-menu .sbar--show {
   display: none;
 }
