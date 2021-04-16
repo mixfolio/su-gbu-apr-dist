@@ -1152,6 +1152,12 @@ option {
   max-width: none;
 }
 
+.vscomp-wrapper {
+  font-family: 'Futura PT Book';
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .vscomp-wrapper.focused .vscomp-toggle-button,
 .vscomp-wrapper:focus .vscomp-toggle-button {
   -webkit-box-shadow: none;
@@ -1170,9 +1176,8 @@ option {
   background-color: #f9f9f9;
 }
 
-.vscomp-value {
-  font-family: 'Futura PT Book';
-  font-size: 18px;
+.vscomp-wrapper:not(.has-value) .vscomp-value {
+  opacity: 1;
 }
 
 .vscomp-arrow {
@@ -1801,6 +1806,23 @@ hr {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.icon-plus.icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-plus.icon-text:hover:before {
+  color: #4C51CC;
+}
+
+.icon-plus.icon-text:before {
+  margin-right: 8px;
 }
 
 .show-menu .sbar--show {

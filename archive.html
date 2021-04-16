@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="css/datepicker.min.css">
    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
    <link rel="stylesheet" href="css/virtual-select.min.css">
+   <link rel="stylesheet" href="css/tooltip.apr.css">
    <link rel="stylesheet" href="css/style.min.css">
    
 
@@ -367,17 +368,32 @@
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label icon-writing"" for="select-podved">Пример select</label>
-      <div id="sample-select"></div>
+      <div data-tooltip="Всплывающая подсказка" id="sample-select"></div>
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label icon-writing"" for="select-podved">Пример multiselect</label>
-      <div id="sample-multiselect"></div>
+      <div data-tooltip="Выберите один или несколько элементов" id="sample-multiselect"></div>
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
       <label class="f-label icon-letter" for="subject">Текстовое поле</label>
       <textarea rows="4" class="f-control w-100" name="message" id="message" placeholder="Введите сообщение"></textarea>
+   </div>
+   <div>
+      <a title="Удалить заявку" class="btn-round btn-round-sm mr-1 icon-trash text-muted"
+         href="?page=incoming_journal&amp;delete=1776"></a>
+      <a title="Удалить заявку" class="btn-round btn-round-sm mr-1 icon-trash text-muted"
+         href="?page=incoming_journal&amp;delete=1776"></a>
+      <a title="Добавить поездку" href="?page=incoming_journal&amp;create_based=1776"
+         class="btn-round btn-round-sm icon-plus mr-1">
+      </a>
+      <a title="Редактировать"
+         class="btn-round btn-round-sm mr-1 icon-pencil" href="?page=incoming_journal&amp;edit=1776"></a>
+         <a title="Удалить заявку" class="btn-round btn-round-sm mr-1 icon-trash text-muted"
+         href="?page=incoming_journal&amp;delete=1776"></a>
+         <a title="Отменить заявку" class="btn-round btn-round-sm mr-1 icon-exit text-error" href="?page=incoming_journal&amp;cancel_out=1776"></a>
+   
    </div>
 
    <div class="col-lg-4 col-md-6 col-12 mb-3">
@@ -866,10 +882,9 @@
       </div>
 
       <div class="sidebar__toggler sbar--show mb-4">
-         <div class="icon-plus">
-            <!-- <img class="d-block" src="img/svg/plus-ico.svg" alt="plus"> -->
-         </div>
-         <p class="ml-1">Добавить событие</p>
+         <p class=" icon-plus icon-text">Добавить событие</p>
+         
+         
       </div>
 
    </div>
@@ -877,33 +892,36 @@
    </div>
    <script   src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
    <script src="js/datepicker.min.js"></script>
-   <script src="js/script.min.js"></script>
    <script src="js/virtual-select.min-2.js"></script>
- 
+   <script src="js/tooltip.min.js"></script>
+   <script src="js/script.min.js"></script>
+   
+
 
    <script>
        VirtualSelect.init({
          ele: '#sample-select',
          options: [
-            { label: 'Options 1', value: '1' },
-            { label: 'Options 2', value: '2' },
-            { label: 'Options 3', value: '3' },
+            { label: 'Выберите элемент 1', value: '1' },
+            { label: 'Выберите элемент 2', value: '2' },
+            { label: 'Выберите элемент 3', value: '3' },
          ],
       });
 
       VirtualSelect.init({
          ele: '#sample-multiselect',
          options: [
-            { label: 'Options 1', value: '1' },
-            { label: 'Options 2', value: '2' },
-            { label: 'Options 3', value: '3' },
-            { label: 'Options 4', value: '4' },
-            { label: 'Options 5', value: '5' },
-            { label: 'Options 6', value: '6' },
-            { label: 'Options 7', value: '7' },
-            { label: 'Options 8', value: '8' },
-            { label: 'Options 9', value: '9' },
-            { label: 'Options 10', value: '10' },
+            { label: 'Логистика', value: '1' },
+            { label: 'Меры поддержки', value: '2' },
+            { label: 'Социальные', value: '3' },
+            { label: 'Имущественные', value: '4' },
+            { label: 'Options 1', value: '5' },
+            { label: 'Options 2', value: '6' },
+            { label: 'Options 3', value: '7' },
+            { label: 'Options 4', value: '8' },
+            { label: 'Options 5', value: '9' },
+            { label: 'Options 6', value: '10' },
+            
             
          ],
          multiple: true,
