@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Система управления ГБУ АПР</title>
+   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+   
+</head>
+<body>
+   
+   <div class="header">
+   <a class="nav-brand" href="home.html"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input class="f-control icon-user" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+            <div class="header-avatar__pict icon-user">
+               <!-- <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico"> -->
+            </div>
+            <ul class="user-menu">
+               <li>
+                  <a class="profile-link icon-user" href="profile-2.html">Профиль</a>
+               </li>
+               <li>
+                  <a class="profile-link icon-exit" href="index.html">Выйти</a>
+               </li>
+            </ul>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
+      </div>
+   </div>
+</div>
+
+   <div class="content">
+
+      <div class="sidebar-left">
+         <ul class="sidebar-left__menu">
+            <!-- Home -->
+            <li>
+               <a href="home.html" class="nav-link icon-home">Главная</a>
+            </li>
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link nav-link--active icon-letter" href="mailing.html">Рассылка почты</a>
+            </li>
+            <!-- Exit-Log -->
+            <li>
+               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал</a>
+            </li>
+           
+            <!-- Private -->
+            <li>
+               <a class="nav-link icon-private" href="dashboard.html">Панель управления</a>
+            </li>
+      
+            <!-- Archive -->
+            <li>
+               <a class="nav-link svg-link icon-archive" href="archive.html">Архив</a>
+            </li>
+      
+            <!-- Settings -->
+            <li>
+               <a class="nav-link icon-gear" href="setup.html">Настройки</a>
+            </li>
+         </ul>
+      </div>
+
+      <main class="main">
+         <div class="btn-burger">
+            <img src="img/svg/burger-ico.svg" alt="burger">
+         </div>
+         <section class="section px-3 py-5">
+            <h4 style="margin-left: 72px" class="title mb-4">Сообщения</h4>
+            <nav class="mb-3" aria-label="pageNavigation">
+               <ul class="pagination">
+                 <li class="page-item">
+                   <a class="page-link" href="#" aria-label="Previous">
+                     <span class="icon-shevron-prev" aria-hidden="true">
+                        
+                     </span>
+                   </a>
+                 </li>
+                 <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                 <li class="page-item"><a class="page-link" href="#">2</a></li>
+                 <li class="page-item"><a class="page-link" href="#">3</a></li>
+                 <li class="page-item">
+                   <a class="page-link" href="#" aria-label="Next">
+                     <span class="icon-shevron-next" aria-hidden="true">
+                      </span>
+                   </a>
+                 </li>
+               </ul>
+             </nav>
+            <div class="card">
+
+               <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                     <p class="f-label">Сергей Васильев</p>
+                     <p class="f-label">21 мая 13:22</p>
+                  </div>
+                 
+                  <p class="f-control w-100">Ваш баланс меньше нуля. Просто пополните его, чтобы снова быть на связи.</p>
+               </div>
+
+               <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                     <p class="f-label">Григорий Кириллин</p>
+                     <p class="f-label">21 мая 13:22</p>
+                  </div>
+                 
+                  <p class="f-control w-100">Андрей, день добрый! Есть несколько задач, т.к наконец-то пригодился бубенец в правом сайд-баре =)</p>
+               </div>
+
+               <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                     <p class="f-label">Григорий Кириллин</p>
+                     <p class="f-label">21 мая 13:22</p>
+                  </div>
+                 
+                  <p class="f-control w-100">
+                     1 - над добавить счетчик к бубенцу, чтобы отображалось кол-во уведомлений <br>
+                     2 - надо сверстать какую-то страницу с сообщениями под это дело, я даже представить не могу как это вообще может выглядеть 
+                     фактически получается - от кого сообщение, текст и дата</p>
+               </div>
+
+               <div class="mb-3">
+                  <div class="d-flex justify-content-between">
+                     <p class="f-label">Иван Петров</p>
+                     <p class="f-label">21 мая 15:00</p>
+                  </div>
+                 
+                  <p class="f-control w-100">Ваш баланс меньше нуля. Просто пополните его, чтобы снова быть на связи. Это легко сделать в приложении «Мой Билайн» А ещё вам доступен Доверительный платёж в размере абонентской платы по вашему тарифу – наберите *141# (стоимость услуги 30 руб). Срок погашения – 3 дня. Команда Билайн</p>
+               </div>
+
+               
+            </div>
+            
+             
+         </section>
+      </main>
+      
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-arr-next" id="sidebarBtn">
+            <!-- <img src="img/svg/arrow-ico.svg" alt="arrow"> -->
+         </div>
+         <p class="sidebar__toggler-text sbar--show ml-2">Свернуть</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-bell">
+            <span class="badge">99+</span>
+            <!-- <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted sbar--show">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-calendar">
+            <!-- <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Календарь</p>
+      </div>
+
+      <div class="sidebar__date sbar--show mb-4">
+         <p class="sidebar__date-current">1 января 2020</p>
+         <p class="sidebar__weekday text-muted">Среда</p>
+      </div>
+
+      <div class="sidebar__toggler sbar--show mb-4">
+         <p class=" icon-plus icon-text">Добавить событие</p>
+         
+         
+      </div>
+
+   </div>
+</div>
+
+   </div>
+   
+   <script src="js/script.min.js"></script>
+</body>
+</html>
