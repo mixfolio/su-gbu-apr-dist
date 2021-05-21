@@ -862,6 +862,25 @@ td {
   color: #4C51CC;
 }
 
+.list-group-block {
+  width: 96px;
+  -webkit-transition: All 0.3s ease 0s;
+  -o-transition: All 0.3s ease 0s;
+  transition: All 0.3s ease 0s;
+}
+
+.list-group-block span {
+  display: none;
+}
+
+.list-group-block:hover {
+  width: 240px;
+}
+
+.list-group-block:hover span {
+  display: inline;
+}
+
 .list-group-list {
   display: -webkit-box;
   display: -ms-flexbox;
