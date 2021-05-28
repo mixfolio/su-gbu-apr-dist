@@ -862,6 +862,10 @@ td {
   color: #4C51CC;
 }
 
+.tab-sm {
+  height: 48px;
+}
+
 .list-group-block {
   width: 96px;
   -webkit-transition: All 0.3s ease 0s;
@@ -2110,6 +2114,10 @@ hr {
   width: 344px;
   top: 48px;
   left: 24px;
+}
+
+.border {
+  border: 1px solid red;
 }
 
 .progress {
