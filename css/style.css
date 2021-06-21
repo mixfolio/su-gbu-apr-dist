@@ -1,34 +1,6 @@
-@font-face {
-  font-family: 'Futura PT Demi';
-  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
 
-@font-face {
-  font-family: 'Futura PT Book';
-  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-.text-label {
-  font-family: 'Futura PT Demi';
-  font-size: 0.75rem;
-  color: #adadad;
-  text-transform: uppercase;
-}
-
+600&display=swap");
 @font-face {
   font-family: 'APR-SU-icons';
   src: url("../fonts/APR-SU-icons.ttf?qmxuj0") format("truetype"), url("../fonts/APR-SU-icons.woff?qmxuj0") format("woff"), url("../fonts/APR-SU-icons.svg?qmxuj0#APR-SU-icons") format("svg");
@@ -520,15 +492,14 @@
 
 .btn {
   display: inline-block;
-  border: 1px solid #4C51CC;
+  border: 1px solid #4a4d86;
   border-radius: 24px;
   background-color: transparent;
-  font-family: 'Futura PT';
   font-size: 1rem;
-  line-height: 48px;
+  line-height: 1.25rem;
+  font-weight: 600;
   text-decoration: none;
-  padding: 0 3rem;
-  height: 48px;
+  padding: 13px 3rem;
   white-space: nowrap;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -537,17 +508,17 @@
 }
 
 .btn:hover {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   color: #ffffff;
 }
 
 .btn-primary {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #3338b2;
+  background-color: #383a65;
 }
 
 .btn-grey {
@@ -605,7 +576,7 @@
   height: 32px;
   font-size: 1rem;
   text-decoration: none;
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .btn-round-sm:hover {
@@ -615,7 +586,7 @@
 }
 
 .btn-primary {
-  background: #4C51CC;
+  background: #4a4d86;
   color: #ffffff;
 }
 
@@ -655,7 +626,7 @@
   height: 48px;
   border-radius: 8px;
   font-size: 22px;
-  color: #4C51CC;
+  color: #4a4d86;
   background-color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -710,34 +681,29 @@
   border-radius: 0.5rem;
 }
 
-table,
-th,
-td {
-  border-collapse: collapse;
-}
-
 .table {
   width: 100%;
-  border-color: #dee2e6;
 }
 
 .table > :not(caption) > * > * {
-  padding: 1.5rem 0.5rem;
+  padding: 16px 12px;
 }
 
 .table th {
-  padding: 0.5rem 0.5rem;
+  padding: 8px 12px;
 }
 
 th {
-  font-family: 'Futura PT Book';
-  font-size: 0.875rem;
-  border: 1px solid #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #4a4d86;
+  background-color: #F0F1F9;
 }
 
 td {
-  font-family: 'Futura PT Book';
-  font-size: 0.875rem;
+  font-size: 1rem;
+  background-color: #fff;
 }
 
 .sticky th {
@@ -757,17 +723,7 @@ td {
   background: #878CFA;
 }
 
-.table > :not(caption) > * > * {
-  border-bottom: 1px solid #dee2e6;
-}
-
-.table-bordered > :not(caption) > * > * {
-  border-width: 1px 0;
-  border: 1px solid #dee2e6;
-}
-
 .tr-accent-1 > td {
-  font-family: 'Futura PT';
   background-color: #F1F2FF;
 }
 
@@ -811,11 +767,13 @@ td {
 }
 
 .tab {
-  padding: 16px 24px;
-  font-family: 'Futura PT Demi';
-  font-size: 1.125rem;
+  padding: 12px 24px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #BFBFBF;
+  color: #b8b8b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,10 +784,7 @@ td {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  height: 64px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -842,24 +797,22 @@ td {
 }
 
 .tab:hover {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+  color: #f6f6f6;
+  background-color: #4a4d86;
 }
 
 .tab:hover::before {
-  color: #4C51CC;
+  color: #f6f6f6;
 }
 
 .tab--active {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+  color: #f6f6f6;
+  background-color: #4a4d86;
   cursor: default;
 }
 
 .tab--active::before {
-  color: #4C51CC;
+  color: #f6f6f6;
 }
 
 .tab-sm {
@@ -894,14 +847,14 @@ td {
   margin-right: 12px;
   margin-left: 12px;
   margin-bottom: 1.5rem;
-  border: 1px solid #4C51CC;
+  border: 1px solid #4a4d86;
   border-radius: 16px;
   overflow: hidden;
 }
 
 .list-group-item {
   width: 100%;
-  border-bottom: 1px solid #4C51CC;
+  border-bottom: 1px solid #4a4d86;
 }
 
 .list-group-item:last-child {
@@ -910,8 +863,10 @@ td {
 
 .list-group-link {
   padding: 16px 24px;
-  font-family: 'Futura PT Demi';
-  font-size: 1.125rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   color: #BFBFBF;
   display: -webkit-box;
@@ -945,7 +900,7 @@ td {
 .list-group-link--active {
   color: #fff;
   cursor: default;
-  background-color: #4C51CC;
+  background-color: #4a4d86;
 }
 
 .list-group-link--active::before {
@@ -971,27 +926,30 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Futura PT Demi';
   font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #adadad;
+  color: #b8b8b8;
   margin-bottom: 8px;
 }
 
 .f-label::before {
   font-size: 20px;
-  color: #4C51CC;
+  color: #4a4d86;
   margin-right: 8px;
 }
 
 .f-control {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: normal;
   border: none;
   border-radius: 24px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 12px 22px;
+  padding: 14px 22px;
 }
 
 .f-control-ico {
@@ -1012,7 +970,7 @@ option {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: #4B4D84;
+  color: #333333;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -1131,7 +1089,7 @@ option {
   left: 4px;
   width: 8px;
   height: 8px;
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   border-radius: 50%;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1300,9 +1258,8 @@ option {
   background-color: #fff;
   cursor: pointer;
   color: #adadad;
-  font-family: 'Futura PT';
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
@@ -1310,7 +1267,7 @@ option {
 }
 
 .page-link:hover {
-  color: #4C51CC;
+  color: #4a4d86;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
@@ -1321,16 +1278,15 @@ option {
 }
 
 .page-link span:hover {
-  color: #4C51CC;
+  color: #4a4d86;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
 }
 
 .page-link.active {
-  font-family: 'Futura PT Demi';
-  font-weight: 500;
-  color: #4C51CC;
+  font-weight: 600;
+  color: #4a4d86;
 }
 
 .signin {
@@ -1356,9 +1312,9 @@ option {
 }
 
 .signin__title {
-  font-family: 'Futura PT';
-  color: #4B4D84;
-  font-size: 28px;
+  color: #333333;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .signin .f-control {
@@ -1372,15 +1328,13 @@ option {
 
 .signin__reg {
   display: block;
-  font-family: 'Futura PT';
-  color: #4B4D84;
+  color: #333333;
   text-decoration: none;
   margin-bottom: 24px;
 }
 
 .signin__text {
   display: block;
-  font-family: 'Futura PT Book';
   color: #adadad;
   text-decoration: none;
 }
@@ -1410,8 +1364,7 @@ option {
 }
 
 .welcome__title {
-  font-family: 'Futura PT Demi';
-  color: #4C51CC;
+  color: #4a4d86;
   font-size: 36px;
   margin-bottom: 48px;
 }
@@ -1443,9 +1396,9 @@ option {
 }
 
 .header__title {
-  font-family: 'Futura PT';
-  font-size: 18px;
-  color: #4B4D84;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333333;
 }
 
 .header-avatar {
@@ -1457,9 +1410,8 @@ option {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 3rem;
-  background-color: #ffffff;
+  background-color: #4a4d86;
   border-radius: 24px;
-  background: #F5F6FF;
   cursor: pointer;
 }
 
@@ -1476,14 +1428,13 @@ option {
   width: 48px;
   height: 48px;
   font-size: 20px;
-  color: #4C51CC;
+  color: #fff;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .header-avatar__text {
-  font-family: 'Futura PT Book';
-  color: #4B4D84;
+  color: #333333;
   padding: 0 24px 0 16px;
 }
 
@@ -1511,7 +1462,6 @@ option {
 }
 
 .profile-link {
-  font-family: 'Futura PT';
   font-size: 1rem;
   text-decoration: none;
   color: #bdbdbd;
@@ -1527,7 +1477,7 @@ option {
 }
 
 .profile-link:hover {
-  color: #4B4D84;
+  color: #333333;
 }
 
 .profile-link::before {
@@ -1537,7 +1487,7 @@ option {
 }
 
 .profile-link:hover::before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .header-avatar:hover .user-menu {
@@ -1561,15 +1511,21 @@ ul li {
   list-style: none;
 }
 
-body {
-  font-family: 'Futura PT Book', sans-serif;
-  font-size: 1rem;
-  background: #fafafa;
+html {
+  font-size: 16px;
 }
 
 html,
 body {
   height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: normal;
+  background: #f6f6f6;
 }
 
 hr {
@@ -1628,7 +1584,7 @@ hr {
 }
 
 .text-primary {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .text-secondary {
@@ -1656,7 +1612,7 @@ hr {
 }
 
 .bg-primary {
-  background-color: #4C51CC !important;
+  background-color: #4a4d86 !important;
 }
 
 .bg-secondary {
@@ -1680,11 +1636,11 @@ hr {
 }
 
 .link-primary {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .link-primary:hover {
-  color: #3338b2;
+  color: #383a65;
 }
 
 .link-secondary {
@@ -1750,10 +1706,10 @@ hr {
 }
 
 .title {
-  font-family: 'Futura PT';
-  color: #4B4D84;
-  text-transform: uppercase;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #333333;
 }
 
 .icon-muted {
@@ -1812,7 +1768,7 @@ hr {
 
 .nav-link--active::before,
 .nav-link:hover::before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .sidebar-right {
@@ -1854,7 +1810,7 @@ hr {
 }
 
 .icon-plus.icon-text:hover:before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .icon-plus.icon-text:before {
@@ -1907,12 +1863,12 @@ hr {
 }
 
 .sidebar__toggler:hover {
-  color: #4B4D84;
+  color: #333333;
 }
 
 .sidebar__desc {
   font-family: 'Futura PT';
-  color: #4B4D84;
+  color: #333333;
   margin-left: 0.5rem;
 }
 
@@ -1924,7 +1880,7 @@ hr {
 
 .sidebar__date-current {
   font-family: 'Futura PT Demi';
-  color: #4B4D84;
+  color: #333333;
 }
 
 .sidebar__weekday {
@@ -1968,7 +1924,7 @@ hr {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .legend {
@@ -2005,7 +1961,7 @@ hr {
 }
 
 .status-1 {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
 }
 
 .status-2 {
@@ -2040,7 +1996,7 @@ hr {
   overflow: hidden;
   margin-right: 8px;
   font-size: 20px;
-  color: #4C51CC;
+  color: #4a4d86;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2166,7 +2122,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   border-radius: 12px;
 }
 
