@@ -711,7 +711,6 @@ td {
   position: sticky;
   top: 0;
   border: 0;
-  background: #dedede;
 }
 
 .table-responsive {
@@ -725,6 +724,13 @@ td {
 
 .tr-accent-1 > td {
   background-color: #F1F2FF;
+}
+
+tr:hover > td {
+  position: relative;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .table-info {
@@ -824,6 +830,8 @@ td {
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .list-group-block span {
@@ -846,15 +854,12 @@ td {
       flex-wrap: wrap;
   margin-right: 12px;
   margin-left: 12px;
-  margin-bottom: 1.5rem;
-  border: 1px solid #4a4d86;
   border-radius: 16px;
   overflow: hidden;
 }
 
 .list-group-item {
   width: 100%;
-  border-bottom: 1px solid #4a4d86;
 }
 
 .list-group-item:last-child {
@@ -1319,6 +1324,7 @@ option {
 
 .signin .f-control {
   width: 300px;
+  background-color: #f6f6f6;
 }
 
 .signin__btn {
@@ -1867,7 +1873,6 @@ hr {
 }
 
 .sidebar__desc {
-  font-family: 'Futura PT';
   color: #333333;
   margin-left: 0.5rem;
 }
@@ -1879,12 +1884,10 @@ hr {
 }
 
 .sidebar__date-current {
-  font-family: 'Futura PT Demi';
   color: #333333;
 }
 
 .sidebar__weekday {
-  font-family: 'Futura PT';
   color: #828282;
 }
 
