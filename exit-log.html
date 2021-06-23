@@ -37,38 +37,47 @@
 </div>
 
    <div class="content">
-      <!-- Sidebar-left -->
+      <!-- Start Sidebar-left -->
       <div class="sidebar-left">
          <ul class="sidebar-left__menu">
             <!-- Home -->
             <li>
                <a class="nav-link icon-home" href="home.html">Главная</a>
             </li>
-            <!-- Mailing -->
-            <li>
-               <a class="nav-link icon-letter" href="mailing.html">Рассылка почты</a>
-            </li>
+            
             <!-- Exit-Log -->
             <li>
-               <a class="nav-link nav-link--active icon-file-attach">Журнал</a>
+               <a class="nav-link nav-link--active icon-file-attach">Журнал выезда сотрудников</a>
             </li>
-           
-            <!-- Private -->
-            <li>
-               <a class="nav-link icon-private" href="dashboard.html">Панель управления</a>
-            </li>
-      
+
             <!-- Archive -->
             <li>
                <a class="nav-link icon-archive" href="archive.html">Архив</a>
             </li>
-      
-            <!-- Settings -->
+           
+            <!-- Dashboard -->
             <li>
-               <a class="nav-link icon-gear" href="setup.html">Настройки</a>
+               <a class="nav-link icon-private" href="dashboard.html">Панель управления</a>
             </li>
+
+            <!-- Prom_radar -->
+            <li>
+               <a class="nav-link icon-industry" href="prom_radar.html">Платформа мониторинга промышленности</a>
+            </li>
+
+            <!-- Phone book -->
+            <li>
+               <a class="nav-link icon-archive" href="phone-book.html">Телефонная книга</a>
+            </li>
+
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link icon-letter" href="mailing.html">Сообщения</a>
+            </li>
+
          </ul>
       </div>
+      <!-- End Sidebar-left -->
 
       <main class="main">
          <div class="btn-burger icon-burger"></div>
@@ -84,7 +93,7 @@
                   <a class="tab">Мои поездки</a>
                </li>
                <li class="tab-item">
-                  <a class="tab ">План поездки сотрудников</a>
+                  <a class="tab ">План поездок сотрудников</a>
                </li>
                <li class="tab-item">
                   <a class="tab ">Отчет по выездам</a>
@@ -99,23 +108,22 @@
                <div class="row">
 
    <div class="col-3 mb-3">
-      <!-- <label class="f-label f-label-ico f-label-ico--user" for="mailFrom">Сотрудник</label> -->
-      <label class="f-label icon-user" for="mailFrom">Сотрудник</label>
+      <label class="f-label" for="mailFrom">Сотрудник</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-3 mb-3">
-      <label class="f-label icon-buildings" for="mailFrom">Организация</label>
+      <label class="f-label" for="mailFrom">Организация</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-3 mb-3">
-      <label class="f-label icon-calendar" for="mailFrom">Дата и время выезда</label>
+      <label class="f-label" for="mailFrom">Дата и время выезда</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-3 mb-3">
-      <label class="f-label icon-goal" for="layerName">Цель поездки</label>
+      <label class="f-label" for="layerName">Цель поездки</label>
       <select id="layerName" class="f-select w-100">
          <option selected="">Выберите из списка</option>
          <option value="1">Слой 2</option>
@@ -123,17 +131,17 @@
    </div>
 
    <div class="col-6 mb-3">
-      <label class="f-label icon-address" for="mailFrom">Адрес назначения</label>
+      <label class="f-label" for="mailFrom">Адрес назначения</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-3 mb-3">
-      <label class="f-label icon-calendar" for="mailFrom">Планируемое время поездки</label>
+      <label class="f-label" for="mailFrom">Планируемое время поездки</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
 
    <div class="col-3 mb-3">
-      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание поездки</label>
+      <label class="f-label" for="mailFrom">Описание поездки</label>
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
    </div>
    
