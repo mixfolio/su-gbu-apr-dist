@@ -1,6 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
-600&display=swap");
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'APR-SU-icons';
   src: url("../fonts/APR-SU-icons.ttf?qmxuj0") format("truetype"), url("../fonts/APR-SU-icons.woff?qmxuj0") format("woff"), url("../fonts/APR-SU-icons.svg?qmxuj0#APR-SU-icons") format("svg");
@@ -1063,7 +1076,6 @@ option {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: 'Futura PT';
   font-size: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1115,8 +1127,6 @@ option {
 }
 
 .form-check-label {
-  font-family: 'Futura PT';
-  font-size: 1rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2062,6 +2072,13 @@ hr {
   width: calc(30% - 24px);
   margin-left: 12px;
   margin-right: 12px;
+}
+
+.text-label {
+  font-family: 'Futura PT Demi';
+  font-size: 0.75rem;
+  color: #adadad;
+  text-transform: uppercase;
 }
 
 .map {
