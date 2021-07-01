@@ -259,186 +259,62 @@
 
             <!-- TAB Content 2 -->
             <div  class="tab-content">
-               <form class="row mb-3">
-   <select class="f-select mx-col" style="width: 220px;">
-      <option selected="">Сначала последние</option>
-      <option value="1">Сначала первые</option>
-   </select>
-   <input class="f-control f-control-ico f-control-ico--search mx-col" name="search" type="text" placeholder="Поиск">
-</form>
-<div class="row" style="word-wrap: break-word;">
-
-   <div class="col-12 card d-flex justify-content-between mb-3">
-      <div class="mx-col">
-         <p class="text-primary">№6677947567</p>
-         <p>27.10.2020 13:56</p>
+               <div class="col-12 mb-3">
+   <label class="f-label" for="archive-2">Срочность</label>
+   <div class="f-check-group">
+      <div class="f-check mr-6">
+         <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
+         <label class="f-check-label" for="urgent"><span>Срочная</span></label>
       </div>
-      <div class="mx-col">
-         <p class="text-label">Сотрудник</p>
-         <p>Пушкин А.С.</p>
-      </div class="mx-col">
-      <div>
-         <p class="text-label">Кабинет</p>
-         <p>№69</p>
-      </div>
-      <div class="mx-col">
-         <p class="text-label">E-mail</p>
-         <p>pushkinas@mail.ru</p>
-      </div>
-      <div class="mx-col">
-         <p class="text-label">Телефон</p>
-         <p>+7(926)123-45-67</p>
-      </div>
-      <div class="mx-col">
-         <p class="text-label">Срочность исполнения</p>
-         <p class="text-error">Срочная</p>
-      </div>
-      <div class="mx-col">
-         <p class="text-label">Примечание</p>
-         <p>-</p>
+      <div class="f-check">
+         <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
+         <label class="f-check-label" for="nonUrgent"><span>Обычной срочности</span></label>
       </div>
    </div>
+</div>
 
-   <div class="col-12 card d-flex mb-3">
-      <div class="col-2">
-         <p class="text-primary">№4</p>
-         <p>09.11.2020 10:25</p>
-         <p><a href="?page=archivarius&amp;edit=4">Редактировать</a></p>
-      </div>
-      <div class="col-2">
-         <p class="text-label">Статус</p>
-         <p>Новая заявка</p>
-      </div>
-      <div class="col-2">
-         <p class="text-label">Срочность исполнения</p>
-         <p class="text-error">Срочная</p>
-      </div>
-      <div class="col-3">
-         <p class="text-label">Документы в заявке:</p>
-         <p title="Документ 1: Исходящее письмо на обращение граждан, документы по их рассмотрению">Документ 1:
-            Исходящее письмо на обращение граждан, документы по их рассмотрению</p>
-         <p title="Описание 1: 123123">Описание 1: 123123</p><br>
-         <p title="Документ 2: Иное">Документ 2: Иное</p>
-         <p title="Описание 2: ">Описание 2: </p>
-      </div>
-      <div class="col-1">
-         <p class="text-label">Исполнитель</p>
-         <p>Не назначен</p>
-      </div>
+<div class="row">
 
-      <div class="col-3">
-         <p class="text-label">Комментарий</p>
-         <p>-</p>
-      </div>
+   <div class="col-6 mb-3">
+      <label class="f-label" for="archive-1">Номер заявки</label>
+      <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
    </div>
 
-   <div class="col-12 card d-flex mb-3">
-      <div class="col-2">
-         <p class="text-primary">№3</p>
-         <p>15.10.2020 14:57</p>
-         <p><a href="?page=archivarius&amp;edit=3">Редактировать</a></p>
-      </div>
-      <div class="col-2">
-         <p class="text-label">Статус</p>
-         <p>Новая заявка</p>
-      </div>
-      <div class="col-2">
-         <p class="text-label">Срочность исполнения</p>
-         <p class="text-success">Обычная срочность</p>
-      </div>
-      <div class="col-3">
-         <p class="text-label">Документы в заявке:</p>
-         <p title="Документ 1: Протокол оперативного совещания, поручение директора ГБУ «АПР»">Документ 1: Протокол
-            оперативного совещания, поручение директора ГБУ «АПР»</p>
-         <p title="Описание 1: 123123123123123123123">Описание 1: 123123123123123123123</p><br>
-         <p
-            title="Документ 2: Договор гражданско-правового характера о выполнении работ, оказания услуг физическими лицами, акты сдачи-приёмки выполненных работ, оказанных услуг">
-            Документ 2: Договор гражданско-правового характера о выполнении работ, оказания услуг физическими лицами,
-            акты сдачи-приёмки выполненных работ, оказанных услуг</p>
-         <p title="Описание 2: qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe">Описание 2:
-            qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe</p>
-      </div>
-      <div class="col-2">
-         <p class="text-label">Исполнитель</p>
-         <p>Не назначен</p>
-      </div>
-
-      <div class="col-2">
-         <p class="text-label">Комментарий</p>
-         <p>-</p>
-      </div>
+   <div class="col-3 mb-3">
+      <label class="f-label" for="archive-1">Тип документа</label>
+      <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Начните вводить тип документа">
    </div>
 
-   <div class="col-12 card mb-3">
-      <div class="row">
-         <div class="col-10pc">
-            <p class="text-primary">№2</p>
-            <p>15.10.2020 14:49</p>
-            <p><a href="?page=archivarius&amp;edit=2">Редактировать</a></p>
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Статус</p>
-            <p>Новая заявка</p>
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Срочность исполнения</p>
-            <p class="text-success">Обычная срочность</p>
-         </div>
-         <div class="col-30pc">
-            <p class="text-label">Документы в заявке:</p>
-            <p title="Документ 1: Входящий документ, содержащий служебную информацию ограниченного распространения">
-               Документ 1: Входящий документ, содержащий служебную информацию ограниченного распространения</p>
-            <p title="Описание 1: asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd">Описание 1:
-               asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Исполнитель</p>
-            <p>Не назначен</p>
-         </div>
-
-         <div class="col-30pc">
-            <p class="text-label">Комментарий</p>
-            <p>-</p>
-         </div>
-      </div>
-
+   <div class="col-3 mb-3">
+      <label class="f-label" for="archive-2">Описание</label>
+      <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
    </div>
 
-   <div class="col-12 card mb-3">
-      <div class="row" >
-         <div class="col-10pc">
-            <p class="text-primary">№1</p>
-            <p>14.10.2020 11:57</p>
-            <p><a href="?page=archivarius&amp;edit=1">Редактировать</a></p>
-            sddddddkjdjsdjflksdlfksjdlfksdlfkjsdlkfjsldkfjlsdkjflsdkjflskdjflskdjflskdjflsdkfjlsdkfjlsdkjflsdk
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Статус</p>
-            <p>Новая заявка</p>
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Срочность исполнения</p>
-            <p class="text-success">Обычная срочность</p>
-         </div>
-         <div class="col-30pc">
-            <p class="text-label">Документы в заявке:</p>
-            <p title="Документ 1: Входящее письмо">Документ 1: Входящее письмо</p>
-            <p title="Описание 1: 123">Описание 1: 123</p>
-         </div>
-         <div class="col-10pc">
-            <p class="text-label">Исполнитель</p>
-            <p>Не назначен</p>
-         </div>
-         <div class="col-30pc">
-            <p class="text-label">Комментарий</p>
-            <p>Перед вами пример докучной сказки - стихотворения, в котором многократно повторяется один и тот же
-               фрагмент текста. Такая сказка похожа на цепь с большим количеством повторяющихся звеньев, количество
-               которых зависит только от воли исполнителя или слушателя. </p>
-         </div>
-      </div>
-
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Статус</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
    </div>
 
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Описание</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Исполнитель</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Комментарий</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Не имеет значения">
+   </div>
+
+
+
+   <div class="col-12 text-center mt-3">
+      <button class="btn btn-primary">Отправить</button>
+   </div>
 </div>
             </div>
 
