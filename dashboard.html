@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.min.css">
-   <title>Система управления ГБУ АПР</title>
+   <title>СУ ГБУ АПР | Панель управления</title>
    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 </head>
@@ -37,56 +37,202 @@
 </div>
 
    <div class="content">
-      
+      <!-- Start Sidebar-left -->
       <div class="sidebar-left">
          <ul class="sidebar-left__menu">
             <!-- Home -->
             <li>
-               <a href="home.html" class="nav-link icon-home">Главная</a>
+               <a class="nav-link icon-home" href="home.html">Главная</a>
             </li>
-            <!-- Mailing -->
-            <li>
-               <a href="mailing.html" class="nav-link icon-letter" href="mailing.html">Рассылка почты</a>
-            </li>
+            
             <!-- Exit-Log -->
             <li>
-               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал</a>
+               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал выезда сотрудников</a>
+            </li>
+
+            <!-- Archive -->
+            <li>
+               <a class="nav-link icon-archive" href="archive.html">Архив</a>
             </li>
            
-            <!-- Private -->
+            <!-- Dashboard -->
             <li>
                <a class="nav-link nav-link--active icon-private">Панель управления</a>
             </li>
-      
-            <!-- Archive -->
+
+            <!-- Prom_radar -->
             <li>
-               <a class="nav-link svg-link icon-archive" href="archive.html">Архив</a>
+               <a class="nav-link icon-industry" href="prom-list.html">Платформа мониторинга промышленности</a>
             </li>
-      
-            <!-- Settings -->
+
+            <!-- Phone book -->
             <li>
-               <a class="nav-link icon-gear" href="setup.html">Настройки</a>
+               <a class="nav-link icon-archive" href="phone-book.html">Телефонная книга</a>
             </li>
+
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link icon-letter" href="mailing.html">Сообщения</a>
+            </li>
+
          </ul>
       </div>
-      
+      <!-- End Sidebar-left -->
+
       <main class="main">
-         <section class="welcome">
-            <div class="welcome__dialog">
-               <div class="welcome__pict">
-                  <img src="img/svg/404.svg" alt="error">
-               </div>
-               <div class="welcome__title">Страница не найдена</div>
-               <a class="btn btn-primary" href="home.html">Главная</a>
+         <div class="btn-burger icon-burger"></div>
+         <section class="px-3 py-5" style="height: 100%;">
+            <h4 style="margin-left: 72px;" class="title mb-4">Панель управления</h4>
+
+            <!-- TABs -->
+            <ul class="tabs-list" style="margin-bottom: 0;">
+               <li class="tab-item">
+                  <a class="tab">Создать нового пользователя</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab">Все пользователи</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab ">Все управления</a>
+               </li>
+             
+            </ul>
+
+            <!-- TAB Content 1 -->
+            <div class="tab-content">
+               <div class="row">
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Выберите нового пользователя для регистрации</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Рабочий E-mail пользователя</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите управление</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите отдел</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   
+
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите должность</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Организация</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="ГБУ «АПР»">
+   </div>
+   
+   <div class="w-100 text-center mt-2">
+      <button class="btn btn-primary">Зарегистрировать</button>
+   </div>
+</div>
             </div>
 
-            
+            <!-- TAB Content 2 -->
+            <div  class="tab-content">
+               
+<div class="row mb-3">
+   <form class="flex justify-content-between">
+      <input class="f-control" name="search" type="text" placeholder="Поиск">
+      <button class="btn btn-primary" type="submit">Найти</button>
+   </form>
+</div>
+
+<div>
+   <table class="table table-new">
+      <thead class="sticky">
+         <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Организация</th>
+            <th>Управление</th>
+            <th>Отдел</th>
+            <th>Должность</th>
+            <th>Кабинет</th>
+            <th>Телефон</th>
+         </tr>
+      </thead>
+      <tbody>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+
+      </tbody>
+   </table>
+</div>
+            </div>
+
+            <!-- TAB Content 3 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
 
          </section>
-         <div class="btn-burger">
-            <img src="img/svg/burger-ico.svg" alt="burger">
-         </div>
-         
+
       </main>
       <div class="sidebar-right show-menu">
    <div class="sidebar-right__menu">

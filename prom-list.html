@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/datepicker.min.css">
+   <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>СУ ГБУ АПР Журнал выезда сотрудников</title>
+   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+   <div class="header">
+   <a class="nav-brand" href="home.html"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input style="background-color: #f6f6f6;" class="f-control icon-user" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+            <div class="header-avatar__pict icon-user">
+               <!-- <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico"> -->
+            </div>
+            <ul class="user-menu">
+               <li>
+                  <a class="profile-link icon-user" href="profile-2.html">Профиль</a>
+               </li>
+               <li>
+                  <a class="profile-link icon-exit" href="index.html">Выйти</a>
+               </li>
+            </ul>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
+      </div>
+   </div>
+</div>
+
+   <div class="content">
+      <!-- Sidebar-left -->
+      <div class="sidebar-left">
+         <ul class="sidebar-left__menu">
+            <!-- Home -->
+            <li>
+               <a class="nav-link icon-home" href="home.html">Главная</a>
+            </li>
+            
+            <!-- Exit-Log -->
+            <li>
+               <a class="nav-link icon-file-attach" href="exit-log.html">Журнал выезда сотрудников</a>
+            </li>
+
+            <!-- Archive -->
+            <li>
+               <a class="nav-link icon-archive" href="archive.html">Архив</a>
+            </li>
+           
+            <!-- Dashboard -->
+            <li>
+               <a class="nav-link icon-private" href="dashboard.html">Панель управления</a>
+            </li>
+
+            <!-- Prom_radar -->
+            <li>
+               <a class="nav-link nav-link--active icon-industry" href="prom_radar.html">Платформа мониторинга промышленности</a>
+            </li>
+
+            <!-- Phone book -->
+            <li>
+               <a class="nav-link icon-phone-call" href="phone_book.html">Телефонная книга</a>
+            </li>
+
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link icon-letter" href="mailing.html">Сообщения</a>
+            </li>
+
+            <!-- Settings -->
+            <!-- <li>
+               <a class="nav-link icon-gear" href="setup.html">Настройки</a>
+            </li> -->
+         </ul>
+      </div>
+
+      <main class="main">
+         <div class="btn-burger icon-burger"></div>
+         <section class="px-3 py-5" style="height: 100%;">
+            <h4 style="margin-left: 72px;" class="title mb-4">Платформа ситуационного мониторинга промышленных предприятий</h4>
+
+          
+
+            <!-- TAB Content 1 -->
+            <div class="tab-content">
+
+               <div class="row" style=" flex-wrap:nowrap;">
+                  <div class="list-group-block">
+                     <ul class="list-group-list">
+                        <li class="list-group-item">
+                           <a class="list-group-link list-group-link--active icon-industry">
+                              <span>Реестр организаций</span>
+                           </a>
+                        </li>
+                        <li class="list-group-item">
+                           <a href="prom_radar_2.html" class="list-group-link  icon-phone-call">
+                              <span>Ситуационный мониторинг</span>
+                           </a>
+                        </li>
+                        <li class="list-group-item">
+                           <a href="prom-survey-01.html" class="list-group-link icon-map">
+                              <span>Обследование организаций</span>
+                           </a>
+                        </li>
+                        <li class="list-group-item">
+                           <a class="list-group-link icon-ruble">
+                              <span>Экономический мониторинг</span>
+                           </a>
+                        </li>
+                        <li class="list-group-item">
+                           <a class="list-group-link icon-book-edit">
+                              <span>База контактов</span>
+                           </a>
+                        </li>
+               
+                        <li class="list-group-item">
+                           <a class="list-group-link icon-gear">
+                              <span>Настройки</span>
+                           </a>
+                        </li>
+                        
+                     </ul>
+               
+                  </div>
+               
+               
+                  <div class="mx-col" style="flex-grow: 1;">
+                     <form id="search_form" class="row mb-3"  method="post">
+                        <input class="f-control mx-col" style="flex-grow: 1;" type="text" placeholder="Поиск по номеру заявки, ИНН или названию организации">
+                        <div class="btn btn-primary mx-col" type="submit">Найти</div>
+                        <div class="btn btn-primary mx-col" type="submit" name="create_request">Добавить обращение</div>
+                     </form>
+                     
+                     <form method="post" class="mb-3 text-right ml-auto">
+                        <input type="hidden" name="search_companies">
+                        <span class="mr-3">Всего результатов 7 на 1 страницах</span>
+
+                        <ul class="pagination">
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">
+                                 <span class="icon-shevron-prev" aria-hidden="true"></span>
+                              </button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link active" name="search_tickets" value="1">1</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">2</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">3</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">
+                                 <span class="icon-shevron-next" aria-hidden="true"></span>
+                              </button>
+                           </li>
+                        </ul>
+                     </form>
+
+                     <table class="table table-new mb-3 text-center">
+                        <thead class="sticky">
+                           <tr>
+                              <th>Дата</th>
+                              <th>№</th>
+                              <th>ИНН</th>
+                              <th>Организация</th>
+                              <th>Суть обращения</th>
+                              <th>Тип обращения</th>
+                              <th>Классификация</th>
+                              <th>Статус</th>
+                              <th>Детали</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+                        </tbody>
+
+                     </table>
+               
+                  </div>
+               
+               </div>
+               
+            </div>
+
+            <!-- TAB Content 2 -->
+            <div  class="tab-content">
+               <form class="row mb-3">
+   <select class="f-select mx-col" style="width: 220px;">
+      <option selected="">Сначала последние</option>
+      <option value="1">Сначала первые</option>
+   </select>
+   <input class="f-control f-control-ico f-control-ico--search mx-col" name="search" type="text" placeholder="Поиск">
+</form>
+<div class="row" style="word-wrap: break-word;">
+
+   <div class="col-12 card d-flex justify-content-between mb-3">
+      <div class="mx-col">
+         <p class="text-primary">№6677947567</p>
+         <p>27.10.2020 13:56</p>
+      </div>
+      <div class="mx-col">
+         <p class="text-label">Сотрудник</p>
+         <p>Пушкин А.С.</p>
+      </div class="mx-col">
+      <div>
+         <p class="text-label">Кабинет</p>
+         <p>№69</p>
+      </div>
+      <div class="mx-col">
+         <p class="text-label">E-mail</p>
+         <p>pushkinas@mail.ru</p>
+      </div>
+      <div class="mx-col">
+         <p class="text-label">Телефон</p>
+         <p>+7(926)123-45-67</p>
+      </div>
+      <div class="mx-col">
+         <p class="text-label">Срочность исполнения</p>
+         <p class="text-error">Срочная</p>
+      </div>
+      <div class="mx-col">
+         <p class="text-label">Примечание</p>
+         <p>-</p>
+      </div>
+   </div>
+
+   <div class="col-12 card d-flex mb-3">
+      <div class="col-2">
+         <p class="text-primary">№4</p>
+         <p>09.11.2020 10:25</p>
+         <p><a href="?page=archivarius&amp;edit=4">Редактировать</a></p>
+      </div>
+      <div class="col-2">
+         <p class="text-label">Статус</p>
+         <p>Новая заявка</p>
+      </div>
+      <div class="col-2">
+         <p class="text-label">Срочность исполнения</p>
+         <p class="text-error">Срочная</p>
+      </div>
+      <div class="col-3">
+         <p class="text-label">Документы в заявке:</p>
+         <p title="Документ 1: Исходящее письмо на обращение граждан, документы по их рассмотрению">Документ 1:
+            Исходящее письмо на обращение граждан, документы по их рассмотрению</p>
+         <p title="Описание 1: 123123">Описание 1: 123123</p><br>
+         <p title="Документ 2: Иное">Документ 2: Иное</p>
+         <p title="Описание 2: ">Описание 2: </p>
+      </div>
+      <div class="col-1">
+         <p class="text-label">Исполнитель</p>
+         <p>Не назначен</p>
+      </div>
+
+      <div class="col-3">
+         <p class="text-label">Комментарий</p>
+         <p>-</p>
+      </div>
+   </div>
+
+   <div class="col-12 card d-flex mb-3">
+      <div class="col-2">
+         <p class="text-primary">№3</p>
+         <p>15.10.2020 14:57</p>
+         <p><a href="?page=archivarius&amp;edit=3">Редактировать</a></p>
+      </div>
+      <div class="col-2">
+         <p class="text-label">Статус</p>
+         <p>Новая заявка</p>
+      </div>
+      <div class="col-2">
+         <p class="text-label">Срочность исполнения</p>
+         <p class="text-success">Обычная срочность</p>
+      </div>
+      <div class="col-3">
+         <p class="text-label">Документы в заявке:</p>
+         <p title="Документ 1: Протокол оперативного совещания, поручение директора ГБУ «АПР»">Документ 1: Протокол
+            оперативного совещания, поручение директора ГБУ «АПР»</p>
+         <p title="Описание 1: 123123123123123123123">Описание 1: 123123123123123123123</p><br>
+         <p
+            title="Документ 2: Договор гражданско-правового характера о выполнении работ, оказания услуг физическими лицами, акты сдачи-приёмки выполненных работ, оказанных услуг">
+            Документ 2: Договор гражданско-правового характера о выполнении работ, оказания услуг физическими лицами,
+            акты сдачи-приёмки выполненных работ, оказанных услуг</p>
+         <p title="Описание 2: qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe">Описание 2:
+            qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe</p>
+      </div>
+      <div class="col-2">
+         <p class="text-label">Исполнитель</p>
+         <p>Не назначен</p>
+      </div>
+
+      <div class="col-2">
+         <p class="text-label">Комментарий</p>
+         <p>-</p>
+      </div>
+   </div>
+
+   <div class="col-12 card mb-3">
+      <div class="row">
+         <div class="col-10pc">
+            <p class="text-primary">№2</p>
+            <p>15.10.2020 14:49</p>
+            <p><a href="?page=archivarius&amp;edit=2">Редактировать</a></p>
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Статус</p>
+            <p>Новая заявка</p>
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Срочность исполнения</p>
+            <p class="text-success">Обычная срочность</p>
+         </div>
+         <div class="col-30pc">
+            <p class="text-label">Документы в заявке:</p>
+            <p title="Документ 1: Входящий документ, содержащий служебную информацию ограниченного распространения">
+               Документ 1: Входящий документ, содержащий служебную информацию ограниченного распространения</p>
+            <p title="Описание 1: asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd">Описание 1:
+               asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Исполнитель</p>
+            <p>Не назначен</p>
+         </div>
+
+         <div class="col-30pc">
+            <p class="text-label">Комментарий</p>
+            <p>-</p>
+         </div>
+      </div>
+
+   </div>
+
+   <div class="col-12 card mb-3">
+      <div class="row" >
+         <div class="col-10pc">
+            <p class="text-primary">№1</p>
+            <p>14.10.2020 11:57</p>
+            <p><a href="?page=archivarius&amp;edit=1">Редактировать</a></p>
+            sddddddkjdjsdjflksdlfksjdlfksdlfkjsdlkfjsldkfjlsdkjflsdkjflskdjflskdjflskdjflsdkfjlsdkfjlsdkjflsdk
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Статус</p>
+            <p>Новая заявка</p>
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Срочность исполнения</p>
+            <p class="text-success">Обычная срочность</p>
+         </div>
+         <div class="col-30pc">
+            <p class="text-label">Документы в заявке:</p>
+            <p title="Документ 1: Входящее письмо">Документ 1: Входящее письмо</p>
+            <p title="Описание 1: 123">Описание 1: 123</p>
+         </div>
+         <div class="col-10pc">
+            <p class="text-label">Исполнитель</p>
+            <p>Не назначен</p>
+         </div>
+         <div class="col-30pc">
+            <p class="text-label">Комментарий</p>
+            <p>Перед вами пример докучной сказки - стихотворения, в котором многократно повторяется один и тот же
+               фрагмент текста. Такая сказка похожа на цепь с большим количеством повторяющихся звеньев, количество
+               которых зависит только от воли исполнителя или слушателя. </p>
+         </div>
+      </div>
+
+   </div>
+
+</div>
+            </div>
+
+            <!-- TAB Content 3 -->
+            <div class="tab-content">
+               <form class="row">
+   <!-- Column-1 -->
+   <!-- <div class="col-6">
+      <div class="row">
+         
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">ФИО сотрудника</label>
+            <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+         </div>
+
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер кабинета</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+         </div>
+      
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Телефон сотрудника</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="+7(926)987-65-43">
+         </div>
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">E-mail сотрудника</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="pushkinas@mail.ru">
+         </div>
+
+      </div>
+   </div> -->
+   <!-- Column-2 -->
+   <!-- <div class="col-6">
+      <div class="row"> -->
+
+         <div class="col-12 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Срочность</label>
+            <div class="f-check-group">
+               <div class="f-check mr-6">
+                  <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
+                  <label class="f-check-label" for="urgent"><span>Срочная</span></label>
+               </div>
+               <div class="f-check">
+                  <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
+                  <label class="f-check-label" for="nonUrgent"><span>Обычной срочности</span></label>
+               </div>
+            </div>
+         </div>
+
+         <div class="col-6 mb-3 d-flex justify-content-between">
+            <div class="w-100">
+               <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+               <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо">
+            </div>
+            <button class="btn-round align-self-end icon-trash ml-1" style="margin-bottom: 6px;">
+               <!-- <img src="./img/svg/trash.svg" alt="trash"></button> -->
+         </div>
+
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Письмо от прокурора">
+         </div>
+
+         <!-- <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+            <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
+         </div>
+
+         <div class="col-6 mb-3">
+            <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+            <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+         </div> -->
+
+         <div class="w-100 d-flex flex-wrap">
+            <hr class="w-100 mx-col mb-4">
+            <div class="col-6 mb-3">
+               <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+               <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Введите текст">
+            </div>
+   
+            <div class="col-6 mb-3">
+               <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+               <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+            </div>
+            <div class="col-3 mb-3">
+               <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Описание</label>
+               <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+            </div>
+            <div class="col-3 mb-3">
+               <label class="f-label f-label-ico f-label-ico--desc" for="data-1">Число</label>
+               <input id="data-1" name="data-1" class="f-control w-100 datepicker-here" type="text" placeholder="Введите текст">
+            </div>
+         </div>
+
+      <!-- </div>
+   </div> -->
+
+   
+
+
+
+   <div class="mt-3 text-right w-100">
+      <button class="btn btn-grey">Добавить документ</button>
+   </div>
+
+   <div class="mt-3 text-center w-100">
+      <button class="btn btn-primary">Отправить</button>
+   </div>
+</form>
+            </div>
+
+            <!-- TAB Content 4 -->
+            <div class="tab-content">
+               
+
+<form class="row">
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="archive-1">Архивный номер документа</label>
+      <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="archive-2">Название документа</label>
+      <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Номер документа по факту</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите номер">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Дата составления документа</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Тип документа</label>
+      <input id="mailFrom" name="mail-from" class="f-control f-control-ico f-control-ico--search  w-100" type="text" placeholder="Иное">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="select-podved">Подведомственность</label>
+      <select id=select-podved class="f-select w-100">
+         <option selected="">Административно-хозяйственное управление (АХУ)</option>
+         <option value="1">Выбор 1</option>
+         <option value="2">Выбор 2</option>
+         <option value="3">Выбор 3</option>
+       </select>
+      <!-- <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст"> -->
+   </div>
+
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Расположение</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Число страниц</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-12 mb-3">
+      <label class="f-label f-label-ico f-label-ico--desc" for="mailFrom">Примечание</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+   
+   
+   <div class="col-12 mt-3 d-flex justify-content-between">
+      <button class="btn btn-grey">Удалить документ</button>
+      <button class="btn btn-primary">Добавить документ в архив</button>
+      <a class="btn btn-secondary">Скачать документ</a>
+      <a class="btn btn-secondary">Создать ссылку для скачивания</a>
+   </div>
+</form>
+
+
+
+
+            </div>
+
+            <!-- TAB Content 5 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+            <!-- TAB Content 6 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+            
+
+         </section>
+
+      </main>
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-arr-next" id="sidebarBtn">
+            <!-- <img src="img/svg/arrow-ico.svg" alt="arrow"> -->
+         </div>
+         <p class="sidebar__toggler-text sbar--show ml-2">Свернуть</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-bell">
+            <span class="badge">99+</span>
+            <!-- <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted sbar--show">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-calendar">
+            <!-- <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Календарь</p>
+      </div>
+
+      <div class="sidebar__date sbar--show mb-4">
+         <p class="sidebar__date-current">1 января 2020</p>
+         <p class="sidebar__weekday text-muted">Среда</p>
+      </div>
+
+      <div class="sidebar__toggler sbar--show mb-4">
+         <p class=" icon-plus icon-text">Добавить событие</p>
+         
+         
+      </div>
+
+   </div>
+</div>
+   </div>
+   <script   src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
+   <script src="js/datepicker.min.js"></script>
+   <script src="js/script.min.js"></script>
+   
+</body>
+
+</html>

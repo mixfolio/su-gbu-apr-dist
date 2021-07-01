@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>СУ ГБУ АПР Журнал выезда сотрудников</title>
+   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+   <div class="header">
+   <a class="nav-brand" href="home.html"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input style="background-color: #f6f6f6;" class="f-control icon-user" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+            <div class="header-avatar__pict icon-user">
+               <!-- <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico"> -->
+            </div>
+            <ul class="user-menu">
+               <li>
+                  <a class="profile-link icon-user" href="profile-2.html">Профиль</a>
+               </li>
+               <li>
+                  <a class="profile-link icon-exit" href="index.html">Выйти</a>
+               </li>
+            </ul>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
+      </div>
+   </div>
+</div>
+
+   <div class="content">
+      <!-- Start Sidebar-left -->
+      <div class="sidebar-left">
+         <ul class="sidebar-left__menu">
+            <!-- Home -->
+            <li>
+               <a class="nav-link icon-home" href="home.html">Главная</a>
+            </li>
+            
+            <!-- Exit-Log -->
+            <li>
+               <a class="nav-link  icon-file-attach" href="exit-log.html">Журнал выезда сотрудников</a>
+            </li>
+
+            <!-- Archive -->
+            <li>
+               <a class="nav-link icon-archive" href="archive.html">Архив</a>
+            </li>
+           
+            <!-- Dashboard -->
+            <li>
+               <a class="nav-link icon-private" href="dashboard.html">Панель управления</a>
+            </li>
+
+            <!-- Prom_radar -->
+            <li>
+               <a class="nav-link nav-link--active icon-industry">Платформа мониторинга промышленности</a>
+            </li>
+
+            <!-- Phone book -->
+            <li>
+               <a class="nav-link icon-archive" href="phone-book.html">Телефонная книга</a>
+            </li>
+
+            <!-- Mailing -->
+            <li>
+               <a class="nav-link icon-letter" href="mailing.html">Сообщения</a>
+            </li>
+
+         </ul>
+      </div>
+      <!-- End Sidebar-left -->
+
+      <main class="main">
+         <div class="btn-burger icon-burger"></div>
+         <section class="px-3 py-5" style="height: 100%;">
+            <h4 style="margin-left: 72px;" class="title mb-4">Платформа ситуационного мониторинга промышленных предприятий</h4>
+            <h4 class="title mb-4">Организация: АО МТЗ ТРАНСМАШ</h4>
+            <!-- TABs -->
+            <ul class="tabs-list">
+               <li class="tab-item">
+                  <a class="tab">Карточка организации</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab">Обращения</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab ">Обследования</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab ">Финансово-экономические показатели</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab">Файлы</a>
+               </li>
+               <li class="tab-item">
+                  <a class="tab">Упоминание в СМИ</a>
+               </li>
+            </ul>
+
+            <!-- TAB Content 1 -->
+            <div class="tab-content">
+               <div class="row">
+   <button class="btn mx-col mb-3">Сделать неактивной</button>
+   <button class="btn btn-primary mx-col mb-3">Распечатать</button>
+   <button class="btn btn-primary mx-col mb-3">Сохранить изменения</button>
+</div>
+
+<div class="row">
+
+   <div class="col-8 mb-3">
+      <label class="f-label" for="mailFrom">Выберите нового пользователя для регистрации</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-4 mb-3">
+      <label class="f-label" for="mailFrom">ИНН</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-8 mb-3">
+      <label class="f-label" for="mailFrom">Краткое наименование</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-4 mb-3">
+      <label class="f-label" for="mailFrom">КПП</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-8 mb-3">
+      <label class="f-label" for="mailFrom">Юридический адрес</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-4 mb-3">
+      <label class="f-label" for="mailFrom">ОГРН</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-8 mb-3">
+      <label class="f-label" for="mailFrom">Фактический адрес</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-4 mb-3">
+      <label class="f-label" for="mailFrom">ОКПО</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-8 mb-3">
+      <label class="f-label" for="mailFrom">Отрасль промышленности</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-4 mb-3">
+      <label class="f-label" for="mailFrom">Основной ОКВЭД2</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="layerName">Статус предприятия</label>
+      <select id="layerName" class="f-select w-100">
+         <option selected="">Выберите из списка</option>
+         <option value="1">Слой 2</option>
+      </select>
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="layerName">Системообразующее предприятие</label>
+      <select id="layerName" class="f-select w-100">
+         <option selected="">Выберите из списка</option>
+         <option value="1">Слой 2</option>
+      </select>
+   </div>
+
+   <div class="col-12 mb-3">
+      <label class="f-label" for="archive-2">Срочность</label>
+      <div class="f-check-group">
+         <div class="f-check mr-6">
+            <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
+            <label class="f-check-label" for="urgent"><span>В процессе создания</span></label>
+         </div>
+         <div class="f-check mr-6">
+            <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
+            <label class="f-check-label" for="nonUrgent"><span>Согласованная</span></label>
+         </div>
+         <div class="f-check">
+            <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
+            <label class="f-check-label" for="nonUrgent"><span>Отклоненная</span></label>
+         </div>
+      </div>
+   </div>
+  
+
+   
+   
+   <div class="w-100 text-center mt-2">
+      <button class="btn btn-primary">Зарегистрировать</button>
+   </div>
+</div>
+            </div>
+
+            <!-- TAB Content 2 -->
+            <div  class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+            <!-- TAB Content 3 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+            <!-- TAB Content 4 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+            <!-- TAB Content 4 -->
+            <div class="tab-content">
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
+            </div>
+
+         </section>
+
+      </main>
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-arr-next" id="sidebarBtn">
+            <!-- <img src="img/svg/arrow-ico.svg" alt="arrow"> -->
+         </div>
+         <p class="sidebar__toggler-text sbar--show ml-2">Свернуть</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-bell">
+            <span class="badge">99+</span>
+            <!-- <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted sbar--show">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-calendar">
+            <!-- <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Календарь</p>
+      </div>
+
+      <div class="sidebar__date sbar--show mb-4">
+         <p class="sidebar__date-current">1 января 2020</p>
+         <p class="sidebar__weekday text-muted">Среда</p>
+      </div>
+
+      <div class="sidebar__toggler sbar--show mb-4">
+         <p class=" icon-plus icon-text">Добавить событие</p>
+         
+         
+      </div>
+
+   </div>
+</div>
+   </div>
+
+   <script src="js/script.min.js"></script>
+</body>
+
+</html>

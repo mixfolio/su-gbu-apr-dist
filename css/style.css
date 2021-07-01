@@ -1011,8 +1011,8 @@ option {
 .f-select {
   height: 48px;
   border-radius: 24px;
-  background-color: #f9f9f9;
-  font-size: 18px;
+  background-color: #ffffff;
+  font-size: 16px;
   padding: 0 1.75rem 0 22px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1124,7 +1124,7 @@ option {
           flex: 0 0 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #E8E9FE;
+  background-color: #ffffff;
   margin-right: 8px;
 }
 
