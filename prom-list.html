@@ -135,13 +135,42 @@
                
                
                   <div class="mx-col" style="flex-grow: 1;">
-                     <form id="search_form" class="row mb-3"  method="post">
-                        <input class="f-control mx-col" style="flex-grow: 1;" type="text" placeholder="Поиск по номеру заявки, ИНН или названию организации">
-                        <div class="btn btn-primary mx-col" type="submit">Найти</div>
-                        <div class="btn btn-primary mx-col" type="submit" name="create_request">Добавить обращение</div>
+                     <form id="search_form" class="mb-3"  method="post">
+                        <div class="row mb-3">
+                           <input class="f-control mx-col" style="flex-grow: 1;" type="text" placeholder="Поиск по номеру заявки, ИНН или названию организации">
+                           <div class="btn btn-primary mx-col" type="submit">Найти</div>
+                           <div class="btn btn-primary mx-col" type="submit" name="create_request">Добавить обращение</div>
+                        </div>
+
+
+                        <div class="row ">
+   
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Дата создания заявки</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+                        
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Типы вопросов</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Классификации вопросов</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Статус обращения</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+                        
+                           
+                        </div>
+                        
                      </form>
                      
-                     <form method="post" class="mb-3 text-right ml-auto">
+                     <!-- <form method="post" class="mb-3 text-right ml-auto">
                         <input type="hidden" name="search_companies">
                         <span class="mr-3">Всего результатов 7 на 1 страницах</span>
 
@@ -166,7 +195,7 @@
                               </button>
                            </li>
                         </ul>
-                     </form>
+                     </form> -->
 
                      <table class="table table-new mb-3 text-center">
                         <thead class="sticky">
