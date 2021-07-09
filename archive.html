@@ -4,10 +4,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/datepicker.min.css">
+   <!-- <link rel="stylesheet" href="css/datepicker.min.css"> -->
    <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
-   <link rel="stylesheet" href="css/virtual-select.min.css">
-   <link rel="stylesheet" href="css/tooltip.apr.css">
+   <!-- <link rel="stylesheet" href="css/virtual-select.min.css"> -->
+   <!-- <link rel="stylesheet" href="css/tooltip.apr.css"> -->
    <link rel="stylesheet" href="css/style.min.css">
    
 
@@ -68,7 +68,7 @@
 
             <!-- Prom_radar -->
             <li>
-               <a class="nav-link icon-industry" href="prom_radar.html">Платформа мониторинга промышленности</a>
+               <a class="nav-link icon-industry" href="prom-list.html">Платформа мониторинга промышленности</a>
             </li>
 
             <!-- Phone book -->
@@ -118,16 +118,19 @@
 
             <!-- TAB Content 1 -->
             <div class="tab-content">
-               <div class="col-12 mb-3">
-   <label class="f-label" for="archive-2">Срочность</label>
-   <div class="f-check-group">
-      <div class="f-check mr-6">
-         <input class="f-check-input" id="urgent" type="radio" value="value" name="urgent">
-         <label class="f-check-label" for="urgent"><span>Срочная</span></label>
-      </div>
-      <div class="f-check">
-         <input class="f-check-input" id="nonUrgent" type="radio" value="value" name="urgent" checked>
-         <label class="f-check-label" for="nonUrgent"><span>Обычной срочности</span></label>
+               
+               <div class="row">
+   <div class="col-12 mb-3">
+      <label class="f-label" for="archive-2">Срочность</label>
+      <div class="f-check-group">
+         <div class="f-check mr-6">
+            <input class="f-check-input" id="urgent1" type="radio" value="value" name="urgent">
+            <label class="f-check-label" for="urgent1"><span>Срочная</span></label>
+         </div>
+         <div class="f-check">
+            <input class="f-check-input" id="nonUrgent1" type="radio" value="value" name="urgent" checked>
+            <label class="f-check-label" for="nonUrgent1"><span>Обычной срочности</span></label>
+         </div>
       </div>
    </div>
 </div>
@@ -159,6 +162,47 @@
       <input id="mailFrom" name="mail-from" class="f-control w-100" type="text"
          placeholder="Введите текст">
    </div>
+</div>
+
+<hr class="mb-3">
+
+<div class="row">
+   
+   <div class="col-6 mb-3">
+      
+         <label class="f-label" for="archive-1">Тип документа</label>
+       <div class="d-flex align-items-center">
+         <input id="archive-1" name="mail-from" class="f-control w-100" type="text" placeholder="Начните вводить тип документа">
+         <button class="btn-round icon-trash text-muted ml-1"></button>
+      </div>
+      
+      
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label" for="archive-2">Описание</label>
+      <input id="archive-2" name="mail-from" class="f-control w-100" type="text" placeholder="Описание содержимого документа">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Документ от (дата)</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Документ до (Дата)</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-6 mb-3">
+      <label class="f-label" for="mailFrom">№ Документа (Оригинальный)</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text"
+         placeholder="Введите текст">
+   </div>
+</div>
+
+<div class="row">
+   
 
    <div class="col-12 text-right mt-3">
       <button class="btn">Добавить документ</button>
@@ -488,12 +532,24 @@
 </div>
    </div>
    <script   src="https://code.jquery.com/jquery-3.5.1.min.js"   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="   crossorigin="anonymous"></script>
-   <script src="js/datepicker.min.js"></script>
-   <script src="js/virtual-select.min-2.js"></script>
-   <script src="js/tooltip.min.js"></script>
+   <!-- <script src="js/datepicker.min.js"></script> -->
+   <!-- <script src="js/virtual-select.min.js"></script> -->
+   <!-- <script src="js/tooltip.min.js"></script> -->
    <script src="js/script.min.js"></script>
    
 
+
+   <!-- <script>
+         VirtualSelect.init({
+            ele: '#my-select',
+            options: [
+               { label: 'Options 1', value: '1' },
+               { label: 'Options 2', value: '2' },
+               { label: 'Options 3', value: '3' },
+            ],
+         });
+
+   </script>
 
    <script>
        VirtualSelect.init({
@@ -524,7 +580,7 @@
          multiple: true,
          search: false,
       });
-   </script>
+   </script> -->
    
 </body>
 
