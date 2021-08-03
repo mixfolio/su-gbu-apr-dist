@@ -85,13 +85,11 @@
       </div>
 
       <main class="main">
-         <div class="btn-burger">
-            <img src="img/svg/burger-ico.svg" alt="burger">
-         </div>
-         <section class="px-3 py-5" style="background: #ffffff; height: 100%;">
+         <div class="btn-burger icon-burger"></div>
+         <section class="px-3 py-5" style="height: 100%;">
             <h4 style="margin-left: 72px;" class="title mb-4">Платформа ситуационного мониторинга промышленных предприятий</h4>
 
-           
+          
 
             <!-- TAB Content 1 -->
             <div class="tab-content">
@@ -100,7 +98,7 @@
                   <div class="list-group-block">
                      <ul class="list-group-list">
                         <li class="list-group-item">
-                           <a class="list-group-link icon-industry">
+                           <a href="prom-list.html" class="list-group-link icon-industry">
                               <span>Реестр организаций</span>
                            </a>
                         </li>
@@ -110,7 +108,7 @@
                            </a>
                         </li>
                         <li class="list-group-item">
-                           <a class="list-group-link icon-map">
+                           <a href="prom-survey-01.html" class="list-group-link icon-map">
                               <span>Обследование организаций</span>
                            </a>
                         </li>
@@ -130,85 +128,159 @@
                               <span>Настройки</span>
                            </a>
                         </li>
+                        
                      </ul>
                
                   </div>
                
                
                   <div class="mx-col" style="flex-grow: 1;">
-                     <form id="search_form" class="row mb-3"  method="post">
-                        <h4 class="title mb-3 d-block w-100 mx-col">Компания "AO "ЛИТ-ФОНОН"" ИНН 7718016680</h4>
-                        <h4 class="title mb-3 d-block w-100 mx-col">Обращение №21-0072-1 27.05.2021 14:11</h4>
-                        <div class="col-12 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Компания</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder='AO "ЛИТ-ФОНОН"'>
+                     <form id="search_form" class="mb-3"  method="post">
+                        <div class="row mb-3">
+                           <input class="f-control mx-col" style="flex-grow: 1;" type="text" placeholder="Поиск по номеру заявки, ИНН или названию организации">
+                           <div class="btn btn-primary mx-col" type="submit">Найти</div>
+                           <div class="btn btn-primary mx-col" type="submit" name="create_request">Добавить обращение</div>
+                        </div>
+
+
+                        <div class="row ">
+                           <h4 class="title w-100 mb-3 mx-col">Расширенный поиск</h4>
+   
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Дата создания заявки</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+                        
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Типы вопросов</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Классификации вопросов</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+
+                           <div class="col-3 mb-3">
+                              <label class="f-label" for="mailFrom">Статус обращения</label>
+                              <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+                           </div>
+                        
+                           
                         </div>
                         
-                        <div class="col-6 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Статус обращения</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Закрыта">
-                        </div>
-                        <div class="col-6 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Комментарий к статусу (при необходимости)</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Обращение зарегистрировано">
-                        </div>
-                        <hr class="w-100 mx-col">
-
-                        <h4 class="title mb-3 d-block w-100 mx-col">Данные заявителя</h4>
-                        <div class="col-4 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Контактное лицо</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Обращение зарегистрировано">
-                        </div>
-                        <div class="col-3 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Контактный e-mail</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Обращение зарегистрировано">
-                        </div>
-                        <div class="col-3 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Контактный телефон</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Обращение зарегистрировано">
-                        </div>
-                        <div class="col-2 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Добавочный номер</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="XXXX">
-                        </div>
-
-                        <h4 class="title mb-3 d-block w-100 mx-col">Основная информация об обращении</h4>
-                        <div class="col-6 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Способ обращения</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Анкета обследователей">
-                        </div>
-
-                        <hr class="w-100 mx-col mb-3">
-
-                        <div class="col-12 mb-3">
-                           <label for="Question0" class="f-label icon-user">Вопрос</label>
-                           <textarea id="Question0" class="f-control w-100" type="text" rows="4" placeholder="Анкета обследователей">В связи с высоким процентом площадей..</textarea>
-                        </div>
-
-                        <div class="col-12 mb-3">
-                           <label for="MonitoringCompanyID" class="f-label icon-user">Классификаци вопроса</label>
-                           <input id="MonitoringCompanyID" class="f-control w-100" type="text" placeholder="Земельные и имущественные тематики">
-                        </div>
-
-                        <button id="add_question" type="button" class="btn btn-primary mx-col">Добавить вопрос</button>
-
-                        <hr class="w-100 mx-col mb-3">
-                        <ul class="tabs-list">
-                           <li class="tab-item">
-                              <a href="#" class="tab tab-sm">Вопросы заявителя</a>
-                           </li>
-                           <li class="tab-item">
-                              <a href="#" class="tab tab-sm">1</a>
-                           </li>
-                           <li class="tab-item">
-                              <a href="#" class="tab tab-sm">Добавить вопрос</a>
-                           </li>
-                        </ul>
-
                      </form>
                      
-                    
-                     
+                     <form method="post" class="mb-3 text-right ml-auto">
+                        <input type="hidden" name="search_companies">
+                        <span class="mr-3">Всего результатов 7 на 1 страницах</span>
+
+                        <ul class="pagination">
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">
+                                 <span class="icon-shevron-prev" aria-hidden="true"></span>
+                              </button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link active" name="search_tickets" value="1">1</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">2</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">3</button>
+                           </li>
+                           <li class="page-item">
+                              <button class="page-link" name="search_tickets" value="1">
+                                 <span class="icon-shevron-next" aria-hidden="true"></span>
+                              </button>
+                           </li>
+                        </ul>
+                     </form>
+
+                     <table class="table table-new mb-3 text-center">
+                        <thead class="sticky">
+                           <tr>
+                              <th>Дата</th>
+                              <th>№</th>
+                              <th>ИНН</th>
+                              <th>Организация</th>
+                              <th>Суть обращения</th>
+                              <th>Тип обращения</th>
+                              <th>Классификация</th>
+                              <th>Статус</th>
+                              <th>Детали</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+
+                           <!-- table row -->
+                           <tr>
+                              <td>27.05.21</td>
+                              <td>21-0073-1</td>
+                              <td>7722169626</td>
+                              <td>ЗАО "МИКОЯНОВСКИЙ МЯСОКОМБИНАТ"</td>
+                              <td>Какие меры поддержки предусмотрены в отношении предприятий нашего профиля?</td>
+                              <td>Консультация</td>
+                              <td>Меры поддержки</td>
+                              <td>Закрыта</td>
+                              <td><a href="prom-list-edit.html">Редактировать</a></td>
+                           </tr>
+                        </tbody>
+
+                     </table>
+               
                   </div>
                
                </div>
