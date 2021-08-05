@@ -16,10 +16,10 @@
 
 @font-face {
   font-family: 'APR-SU-icons';
-  src: url("../fonts/APR-SU-icons.ttf?qmxuj0") format("truetype"), url("../fonts/APR-SU-icons.woff?qmxuj0") format("woff"), url("../fonts/APR-SU-icons.svg?qmxuj0#APR-SU-icons") format("svg");
+  src: url("../fonts/APR-SU-icons.woff2") format("woff2"), url("../fonts/APR-SU-icons.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 [class^="icon-"]::before,
@@ -1411,6 +1411,7 @@ option {
 .welcome__title {
   color: #4a4d86;
   font-size: 36px;
+  line-height: 1.5;
   margin-bottom: 48px;
 }
 
