@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Layout</title>
+   <style>
+      body {
+         
+         margin: 0;
+      }
+      .wrapper {
+         height: 100%;
+         overflow: hidden;
+         width: 100%;
+         background-color: rgba(0, 0, 0, 0.5);
+      }
+      .leftside-menu {
+         width: 260px;
+         z-index: 10;
+         background: linear-gradient(135deg,#8f75da 0,#727cf5 60%);
+         bottom: 0;
+         position: fixed;
+         top: 0;
+         padding-top: 70px;
+         box-shadow: 0 0 35px 0 rgba(154,161,171,.15);
+      }
+      .content-page {
+         margin-left: 260px;
+         overflow: hidden;
+         padding: 70px 12px 65px;
+         min-height: 100vh;
+         background-color: rosybrown;
+      }
+   </style>
+</head>
+<body>
+   <div class="wrapper">
+      <!-- <div class="leftside-menu">
+         <h4>leftside-menu</h4>
+      </div> -->
+      <div class="content-page">
+         <h2>Hello</h2>
+      </div>
+      
+
+   </div>
+   
+   
+</body>
+</html>
