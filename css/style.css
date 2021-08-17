@@ -1216,8 +1216,9 @@ option {
 
 .vscomp-wrapper.focused .vscomp-toggle-button,
 .vscomp-wrapper:focus .vscomp-toggle-button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
 .vscomp-dropbox {
@@ -1229,7 +1230,7 @@ option {
   border-radius: 24px;
   padding: 14px 30px 14px 22px;
   border: none;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 .vscomp-wrapper:not(.has-value) .vscomp-value {
@@ -1252,6 +1253,12 @@ option {
 
 .vscomp-option.focused {
   background-color: #D9DAFF;
+}
+
+.vscomp-search-input {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 .card {
