@@ -804,14 +804,14 @@ tr:hover > td {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -4px;
+  margin-left: -4px;
   margin-bottom: 1.5rem;
 }
 
 .tab-item {
-  margin: 0 12px;
-  margin-bottom: 24px;
+  margin: 0 4px;
+  margin-bottom: 4px;
 }
 
 .tab {
@@ -832,7 +832,7 @@ tr:hover > td {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -954,18 +954,6 @@ tr:hover > td {
   color: #fff;
 }
 
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  resize: none;
-}
-
-select,
-option {
-  font-family: inherit;
-  font-size: inherit;
-}
-
 .f-label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -988,14 +976,12 @@ option {
 }
 
 .f-control {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: normal;
   border: none;
   border-radius: 24px;
   background-color: #ffffff;
-  font-family: inherit;
   padding: 14px 22px;
 }
 
@@ -1024,7 +1010,7 @@ option {
   height: 48px;
   border-radius: 24px;
   background-color: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 0 1.75rem 0 22px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1210,7 +1196,7 @@ option {
 
 .vscomp-wrapper {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -1256,7 +1242,7 @@ option {
 }
 
 .vscomp-search-input {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
 }
@@ -1453,7 +1439,7 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 34px;
+  padding: 24px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
@@ -1607,6 +1593,21 @@ option {
 
 ul li {
   list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: none;
 }
 
 html {
