@@ -1,40 +1,25 @@
 @font-face {
-  font-family: 'Futura PT Demi';
-  src: url("../fonts/FuturaPT-Demi.woff2") format("woff2"), url("../fonts/FuturaPT-Demi.woff") format("woff");
-  font-weight: 500;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Futura PT Book';
-  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"), url("../fonts/FuturaPT-Book.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"), url("../fonts/FuturaPT-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-.text-label {
-  font-family: 'Futura PT Demi';
-  font-size: 0.75rem;
-  color: #adadad;
-  text-transform: uppercase;
 }
 
 @font-face {
   font-family: 'APR-SU-icons';
-  src: url("../fonts/APR-SU-icons.ttf?qmxuj0") format("truetype"), url("../fonts/APR-SU-icons.woff?qmxuj0") format("woff"), url("../fonts/APR-SU-icons.svg?qmxuj0#APR-SU-icons") format("svg");
+  src: url("../fonts/APR-SU-icons.woff2") format("woff2"), url("../fonts/APR-SU-icons.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 [class^="icon-"]::before,
@@ -410,6 +395,10 @@
   margin-bottom: 0.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
 .mb-3 {
   margin-bottom: 1.5rem;
 }
@@ -520,15 +509,15 @@
 
 .btn {
   display: inline-block;
-  border: 1px solid #4C51CC;
+  border: 1px solid #dedede;
   border-radius: 24px;
-  background-color: transparent;
-  font-family: 'Futura PT';
+  background-color: #dedede;
+  color: #b8b8b8;
   font-size: 1rem;
-  line-height: 48px;
+  line-height: 1.25rem;
+  font-weight: 600;
   text-decoration: none;
-  padding: 0 3rem;
-  height: 48px;
+  padding: 13px 2rem;
   white-space: nowrap;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -537,17 +526,31 @@
 }
 
 .btn:hover {
-  background-color: #4C51CC;
+  border-color: #b8b8b8;
+  background-color: #b8b8b8;
   color: #ffffff;
 }
 
 .btn-primary {
-  background-color: #4C51CC;
+  border: 1px solid #4a4d86;
+  background-color: #4a4d86;
   color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #3338b2;
+  border-color: #383a65;
+  background-color: #383a65;
+}
+
+.btn-danger {
+  border: 1px solid #E9B363;
+  background-color: #E9B363;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  border-color: #e39d36;
+  background-color: #e39d36;
 }
 
 .btn-grey {
@@ -582,6 +585,7 @@
           align-items: center;
   -webkit-box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
   cursor: pointer;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
@@ -597,6 +601,16 @@
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.3);
 }
 
+.btn-round-lg {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48px;
+          flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  color: #ffffff;
+  background-color: #b8b8b8;
+}
+
 .btn-round-sm {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 32px;
@@ -604,8 +618,7 @@
   width: 32px;
   height: 32px;
   font-size: 1rem;
-  text-decoration: none;
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .btn-round-sm:hover {
@@ -615,7 +628,7 @@
 }
 
 .btn-primary {
-  background: #4C51CC;
+  background: #4a4d86;
   color: #ffffff;
 }
 
@@ -655,7 +668,7 @@
   height: 48px;
   border-radius: 8px;
   font-size: 22px;
-  color: #4C51CC;
+  color: #4a4d86;
   background-color: #ffffff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -710,34 +723,29 @@
   border-radius: 0.5rem;
 }
 
-table,
-th,
-td {
-  border-collapse: collapse;
-}
-
 .table {
   width: 100%;
-  border-color: #dee2e6;
 }
 
 .table > :not(caption) > * > * {
-  padding: 1.5rem 0.5rem;
+  padding: 16px 12px;
 }
 
 .table th {
-  padding: 0.5rem 0.5rem;
+  padding: 8px 12px;
 }
 
 th {
-  font-family: 'Futura PT Book';
-  font-size: 0.875rem;
-  border: 1px solid #ffffff;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #4a4d86;
 }
 
 td {
-  font-family: 'Futura PT Book';
-  font-size: 0.875rem;
+  font-size: 1rem;
+  background-color: #fff;
 }
 
 .sticky th {
@@ -745,7 +753,6 @@ td {
   position: sticky;
   top: 0;
   border: 0;
-  background: #dedede;
 }
 
 .table-responsive {
@@ -757,18 +764,14 @@ td {
   background: #878CFA;
 }
 
-.table > :not(caption) > * > * {
-  border-bottom: 1px solid #dee2e6;
-}
-
-.table-bordered > :not(caption) > * > * {
-  border-width: 1px 0;
-  border: 1px solid #dee2e6;
-}
-
 .tr-accent-1 > td {
-  font-family: 'Futura PT';
   background-color: #F1F2FF;
+}
+
+tr:hover > td {
+  position: relative;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
 .table-info {
@@ -778,7 +781,6 @@ td {
   left: 0;
   -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
           box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-  z-index: 10;
   background-color: #fff;
 }
 
@@ -800,22 +802,24 @@ td {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -12px;
-  margin-left: -12px;
+  margin-right: -4px;
+  margin-left: -4px;
   margin-bottom: 1.5rem;
 }
 
 .tab-item {
-  margin: 0 12px;
-  margin-bottom: 24px;
+  margin: 0 4px;
+  margin-bottom: 4px;
 }
 
 .tab {
-  padding: 16px 24px;
-  font-family: 'Futura PT Demi';
-  font-size: 1.125rem;
+  padding: 12px 24px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #BFBFBF;
+  color: #b8b8b8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,10 +830,7 @@ td {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  height: 64px;
-  border-radius: 16px;
-  -webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 8px 8px 0 0;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -842,24 +843,22 @@ td {
 }
 
 .tab:hover {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+  color: #f6f6f6;
+  background-color: #4a4d86;
 }
 
 .tab:hover::before {
-  color: #4C51CC;
+  color: #f6f6f6;
 }
 
 .tab--active {
-  color: #4B4D84;
-  -webkit-box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
-          box-shadow: 0px 3px 16px rgba(76, 81, 204, 0.15);
+  color: #f6f6f6;
+  background-color: #4a4d86;
   cursor: default;
 }
 
 .tab--active::before {
-  color: #4C51CC;
+  color: #f6f6f6;
 }
 
 .tab-sm {
@@ -871,6 +870,8 @@ td {
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .list-group-block span {
@@ -893,15 +894,12 @@ td {
       flex-wrap: wrap;
   margin-right: 12px;
   margin-left: 12px;
-  margin-bottom: 1.5rem;
-  border: 1px solid #4C51CC;
   border-radius: 16px;
   overflow: hidden;
 }
 
 .list-group-item {
   width: 100%;
-  border-bottom: 1px solid #4C51CC;
 }
 
 .list-group-item:last-child {
@@ -910,8 +908,10 @@ td {
 
 .list-group-link {
   padding: 16px 24px;
-  font-family: 'Futura PT Demi';
-  font-size: 1.125rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   color: #BFBFBF;
   display: -webkit-box;
@@ -945,23 +945,11 @@ td {
 .list-group-link--active {
   color: #fff;
   cursor: default;
-  background-color: #4C51CC;
+  background-color: #4a4d86;
 }
 
 .list-group-link--active::before {
   color: #fff;
-}
-
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  resize: none;
-}
-
-select,
-option {
-  font-family: inherit;
-  font-size: inherit;
 }
 
 .f-label {
@@ -971,27 +959,40 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Futura PT Demi';
   font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #adadad;
+  color: #4a4d86;
   margin-bottom: 8px;
 }
 
 .f-label::before {
   font-size: 20px;
-  color: #4C51CC;
+  color: #4a4d86;
   margin-right: 8px;
 }
 
 .f-control {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: normal;
   border: none;
   border-radius: 24px;
-  background-color: #f9f9f9;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  padding: 12px 22px;
+  background-color: #ffffff;
+  padding: 14px 22px;
+}
+
+.f-control:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+}
+
+.f-control:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
 .f-control-ico {
@@ -1006,13 +1007,13 @@ option {
 .f-select {
   height: 48px;
   border-radius: 24px;
-  background-color: #f9f9f9;
-  font-size: 18px;
+  background-color: #ffffff;
+  font-size: 1rem;
   padding: 0 1.75rem 0 22px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: #4B4D84;
+  color: #333333;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -1023,6 +1024,12 @@ option {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.f-select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
 .input-attachment {
@@ -1100,7 +1107,6 @@ option {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-family: 'Futura PT';
   font-size: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1120,7 +1126,7 @@ option {
           flex: 0 0 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #E8E9FE;
+  background-color: #ffffff;
   margin-right: 8px;
 }
 
@@ -1131,7 +1137,7 @@ option {
   left: 4px;
   width: 8px;
   height: 8px;
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   border-radius: 50%;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -1152,8 +1158,6 @@ option {
 }
 
 .form-check-label {
-  font-family: 'Futura PT';
-  font-size: 1rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1189,15 +1193,16 @@ option {
 }
 
 .vscomp-wrapper {
-  font-family: 'Futura PT Book';
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   font-weight: normal;
 }
 
 .vscomp-wrapper.focused .vscomp-toggle-button,
 .vscomp-wrapper:focus .vscomp-toggle-button {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(74, 77, 134, 0.25);
 }
 
 .vscomp-dropbox {
@@ -1209,7 +1214,7 @@ option {
   border-radius: 24px;
   padding: 14px 30px 14px 22px;
   border: none;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 .vscomp-wrapper:not(.has-value) .vscomp-value {
@@ -1232,6 +1237,12 @@ option {
 
 .vscomp-option.focused {
   background-color: #D9DAFF;
+}
+
+.vscomp-search-input {
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
 }
 
 .card {
@@ -1300,9 +1311,8 @@ option {
   background-color: #fff;
   cursor: pointer;
   color: #adadad;
-  font-family: 'Futura PT';
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
@@ -1310,7 +1320,7 @@ option {
 }
 
 .page-link:hover {
-  color: #4C51CC;
+  color: #4a4d86;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
@@ -1321,16 +1331,15 @@ option {
 }
 
 .page-link span:hover {
-  color: #4C51CC;
+  color: #4a4d86;
   -webkit-transition: All 0.3s ease 0s;
   -o-transition: All 0.3s ease 0s;
   transition: All 0.3s ease 0s;
 }
 
 .page-link.active {
-  font-family: 'Futura PT Demi';
-  font-weight: 500;
-  color: #4C51CC;
+  font-weight: 600;
+  color: #4a4d86;
 }
 
 .signin {
@@ -1356,13 +1365,14 @@ option {
 }
 
 .signin__title {
-  font-family: 'Futura PT';
-  color: #4B4D84;
-  font-size: 28px;
+  color: #333333;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .signin .f-control {
   width: 300px;
+  background-color: #f6f6f6;
 }
 
 .signin__btn {
@@ -1372,15 +1382,13 @@ option {
 
 .signin__reg {
   display: block;
-  font-family: 'Futura PT';
-  color: #4B4D84;
+  color: #333333;
   text-decoration: none;
   margin-bottom: 24px;
 }
 
 .signin__text {
   display: block;
-  font-family: 'Futura PT Book';
   color: #adadad;
   text-decoration: none;
 }
@@ -1410,9 +1418,9 @@ option {
 }
 
 .welcome__title {
-  font-family: 'Futura PT Demi';
-  color: #4C51CC;
+  color: #4a4d86;
   font-size: 36px;
+  line-height: 1.5;
   margin-bottom: 48px;
 }
 
@@ -1429,7 +1437,7 @@ option {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 34px;
+  padding: 24px;
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
@@ -1443,9 +1451,9 @@ option {
 }
 
 .header__title {
-  font-family: 'Futura PT';
-  font-size: 18px;
-  color: #4B4D84;
+  font-size: 20px;
+  font-weight: normal;
+  color: #333333;
 }
 
 .header-avatar {
@@ -1457,9 +1465,8 @@ option {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 3rem;
-  background-color: #ffffff;
+  background-color: #4a4d86;
   border-radius: 24px;
-  background: #F5F6FF;
   cursor: pointer;
 }
 
@@ -1476,14 +1483,13 @@ option {
   width: 48px;
   height: 48px;
   font-size: 20px;
-  color: #4C51CC;
+  color: #fff;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .header-avatar__text {
-  font-family: 'Futura PT Book';
-  color: #4B4D84;
+  color: #333333;
   padding: 0 24px 0 16px;
 }
 
@@ -1511,7 +1517,6 @@ option {
 }
 
 .profile-link {
-  font-family: 'Futura PT';
   font-size: 1rem;
   text-decoration: none;
   color: #bdbdbd;
@@ -1527,7 +1532,7 @@ option {
 }
 
 .profile-link:hover {
-  color: #4B4D84;
+  color: #333333;
 }
 
 .profile-link::before {
@@ -1537,11 +1542,38 @@ option {
 }
 
 .profile-link:hover::before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .header-avatar:hover .user-menu {
   display: block;
+}
+
+.popup-dialog {
+  margin: 30px auto;
+  width: 1052px;
+  padding: 40px 30px;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+.popup-col_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup-col_item:hover {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -1561,15 +1593,36 @@ ul li {
   list-style: none;
 }
 
-body {
-  font-family: 'Futura PT Book', sans-serif;
-  font-size: 1rem;
-  background: #fafafa;
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+html {
+  font-size: 16px;
 }
 
 html,
 body {
   height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: normal;
+  background: #f6f6f6;
 }
 
 hr {
@@ -1619,6 +1672,12 @@ hr {
       align-self: flex-end;
 }
 
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .d-block {
   display: block;
 }
@@ -1628,7 +1687,7 @@ hr {
 }
 
 .text-primary {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .text-secondary {
@@ -1640,7 +1699,7 @@ hr {
 }
 
 .text-danger {
-  color: #FF9900;
+  color: #E9B363;
 }
 
 .text-success {
@@ -1656,7 +1715,7 @@ hr {
 }
 
 .bg-primary {
-  background-color: #4C51CC !important;
+  background-color: #4a4d86 !important;
 }
 
 .bg-secondary {
@@ -1668,7 +1727,7 @@ hr {
 }
 
 .bg-danger {
-  background-color: #FF9900 !important;
+  background-color: #E9B363 !important;
 }
 
 .bg-success {
@@ -1680,11 +1739,11 @@ hr {
 }
 
 .link-primary {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .link-primary:hover {
-  color: #3338b2;
+  color: #383a65;
 }
 
 .link-secondary {
@@ -1704,11 +1763,11 @@ hr {
 }
 
 .link-danger {
-  color: #FF9900;
+  color: #E9B363;
 }
 
 .link-danger:hover {
-  color: #cc7a00;
+  color: #e39d36;
 }
 
 .link-success {
@@ -1750,10 +1809,15 @@ hr {
 }
 
 .title {
-  font-family: 'Futura PT';
-  color: #4B4D84;
-  text-transform: uppercase;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+h4 {
+  line-height: 1.25rem;
+  font-weight: 600;
 }
 
 .icon-muted {
@@ -1812,7 +1876,7 @@ hr {
 
 .nav-link--active::before,
 .nav-link:hover::before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .sidebar-right {
@@ -1854,7 +1918,7 @@ hr {
 }
 
 .icon-plus.icon-text:hover:before {
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .icon-plus.icon-text:before {
@@ -1907,12 +1971,11 @@ hr {
 }
 
 .sidebar__toggler:hover {
-  color: #4B4D84;
+  color: #333333;
 }
 
 .sidebar__desc {
-  font-family: 'Futura PT';
-  color: #4B4D84;
+  color: #333333;
   margin-left: 0.5rem;
 }
 
@@ -1923,12 +1986,10 @@ hr {
 }
 
 .sidebar__date-current {
-  font-family: 'Futura PT Demi';
-  color: #4B4D84;
+  color: #333333;
 }
 
 .sidebar__weekday {
-  font-family: 'Futura PT';
   color: #828282;
 }
 
@@ -1968,7 +2029,7 @@ hr {
 
 .breadcrumb a {
   text-decoration: none;
-  color: #4C51CC;
+  color: #4a4d86;
 }
 
 .legend {
@@ -2005,7 +2066,7 @@ hr {
 }
 
 .status-1 {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
 }
 
 .status-2 {
@@ -2040,7 +2101,7 @@ hr {
   overflow: hidden;
   margin-right: 8px;
   font-size: 20px;
-  color: #4C51CC;
+  color: #4a4d86;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2105,6 +2166,13 @@ hr {
   margin-right: 12px;
 }
 
+.text-label {
+  font-family: 'Futura PT Demi';
+  font-size: 0.75rem;
+  color: #adadad;
+  text-transform: uppercase;
+}
+
 .map {
   position: relative;
 }
@@ -2166,7 +2234,7 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #4C51CC;
+  background-color: #4a4d86;
   border-radius: 12px;
 }
 
@@ -2185,6 +2253,29 @@ progress {
   line-height: 24px;
   font-size: 16px;
   text-align: center;
+}
+
+.stat-card {
+  padding: 16px 32px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.stat-card__graph {
+  width: 148px;
+  height: 80px;
+  background: url(../img/svg/radar-graph.svg) no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media (min-width: 768px) {
