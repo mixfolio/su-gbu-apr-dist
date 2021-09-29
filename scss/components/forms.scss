@@ -1,0 +1,227 @@
+//Forms
+
+.f-label {
+   display: flex;
+   align-items: center;
+   font-size: 0.75rem;
+   line-height: 1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: $primary-color;
+   margin-bottom: 8px;
+   &::before {
+      font-size: 20px;
+      color: $primary-color;
+      margin-right: 8px;
+   }
+}
+
+.f-control {
+   // height: 48px;
+   font-size: 1rem;
+   line-height: 1.25rem;
+   font-weight: normal;
+   border: none;
+   border-radius: 24px;
+   background-color: #ffffff;
+   padding: 14px 22px;
+
+   &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+   }
+}
+
+.f-control:focus {
+   outline: 0;
+   box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+}
+
+.f-control-ico {
+   background-repeat: no-repeat;
+   background-position: calc(100% - 22px) 50% ;
+}
+
+.f-control-ico--search {
+   background-image: url(../img/svg/search-ico.svg);
+}
+
+
+.f-select {
+   height: 48px;
+   border-radius: 24px;
+   background-color: #ffffff;
+   font-size: 1rem;
+   padding: 0 1.75rem 0 22px;
+   appearance: none;
+   color: $title-color;
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+   background-repeat: no-repeat;
+   background-position: right 0.75rem center;
+   background-size: 16px 12px;
+   &:active {
+      appearance: none;
+   }
+   &:focus {
+      outline: 0;
+      box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+   }
+}
+
+.input-attachment {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.label-attachment {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 48px;
+   background-color: #F9F9FF;
+   border-radius: 16px;
+   color: #9EA0DC;
+}
+
+.temp-holder::placeholder {
+   color: #000000;
+}
+
+// Radio buttons
+.f-check-group {
+   display: flex;
+   height: 48px;
+   align-items: center;
+}
+
+.f-check-input:checked + .f-check-label::after {
+   transform: scale(1);
+}
+
+.f-check-input {
+   display: none;
+}
+
+.f-check-label {
+   position: relative;
+   display: inline-flex;
+   font-size: 1rem;
+   align-items: center;
+   cursor: pointer;
+   span {
+      flex-shrink: 0;
+   }
+   &:before {
+      content: '';
+      flex: 0 0 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      margin-right: 8px;
+   }
+   &:after {
+      position: absolute;
+      content: '';
+      top: 6.5px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      transform: scale(0);
+      transition: transform 0.3s ease 0s;
+   }
+}
+
+
+.form-check-input {
+   display: none;
+}
+
+.form-check-input:checked + .form-check-label::after {
+   display: block;
+}
+
+.form-check-label {
+   display: inline-flex;
+   align-items: center;
+   position: relative;
+   cursor: pointer;
+}
+
+.form-check-label::before {
+   content: '';
+   // align-self: flex-start;
+   flex: 0 0 16px;
+   height: 16px;
+   background-color: #E8E9FE;
+   margin-right: 8px;
+   border-radius: 4px;
+   position: relative;
+}
+
+.form-check-label::after {
+   content: url(../img/svg/check-ico.svg);
+
+   top: 0;
+   left: 0;
+   position: absolute;
+   display: none;
+}
+
+.vscomp-ele {
+   max-width: none;
+}
+
+.vscomp-wrapper {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1rem;
+   font-weight: normal;
+}
+
+.vscomp-wrapper.focused .vscomp-toggle-button, .vscomp-wrapper:focus .vscomp-toggle-button {
+   // box-shadow: none;
+   outline: 0;
+   box-shadow: 0 0 0 .25rem rgba(74,77,134,.25);
+}
+.vscomp-dropbox {
+   box-shadow: 0 3px 16px rgba(76,81,204,.15);
+}
+
+.vscomp-toggle-button {
+   border-radius: 24px;
+   padding: 14px 30px 14px 22px;
+   border: none;
+   background-color: #ffffff;
+}
+
+.vscomp-wrapper:not(.has-value) .vscomp-value {
+   opacity: 1;
+}
+.vscomp-arrow {
+   right: 8px;
+}
+
+.vscomp-arrow::after {
+   border-right-color: #4C51CC;
+   border-bottom-color: #4C51CC;
+   /* border: 2px solid transparent; */
+}
+.vscomp-option.selected {
+   background-color: #F1F2FF;
+}
+.vscomp-option.focused {
+   background-color: #D9DAFF;
+}
+
+.vscomp-search-input {
+   font-size: 1rem;
+   font-family: Montserrat, sans-serif;
+   font-weight: 400;
+}

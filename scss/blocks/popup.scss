@@ -1,0 +1,25 @@
+.popup-dialog {
+   margin: 30px auto;
+   width: 1052px;
+   padding: 40px 30px;
+   background: #f6f6f6;
+   border-radius: 8px;
+}
+
+.popup-col_item {
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+   padding: 10px;
+   margin-bottom: 6px;
+   cursor: pointer;
+   border-radius: 4px;
+}
+
+.popup-col_item:hover {
+   box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+
+
+

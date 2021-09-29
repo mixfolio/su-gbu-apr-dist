@@ -1,0 +1,234 @@
+// @font-face {
+//    font-family: 'APR-SU-icons';
+//    src:
+//      url('../fonts/APR-SU-icons.ttf?qmxuj0') format('truetype'),
+//      url('../fonts/APR-SU-icons.woff?qmxuj0') format('woff'),
+//      url('../fonts/APR-SU-icons.svg?qmxuj0#APR-SU-icons') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//    font-display: block;
+// }
+ 
+[class^="icon-"]::before, 
+[class*=" icon-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: 'APR-SU-icons' !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+ 
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-address:before {
+  content: "\e900";
+}
+.icon-archive:before {
+  content: "\e901";
+}
+.icon-area:before {
+  content: "\e902";
+}
+.icon-arr-next:before {
+  content: "\e903";
+}
+.icon-arr-prev:before {
+  content: "\e904";
+}
+.icon-art:before {
+  content: "\e905";
+}
+.icon-bar-chart:before {
+  content: "\e906";
+}
+.icon-bars-graphic:before {
+  content: "\e907";
+}
+.icon-bell:before {
+  content: "\e908";
+}
+.icon-book-edit:before {
+  content: "\e909";
+}
+.icon-box:before {
+  content: "\e90a";
+}
+.icon-buildings:before {
+  content: "\e90b";
+}
+.icon-burger:before {
+  content: "\e90c";
+}
+.icon-calendar:before {
+  content: "\e90d";
+}
+.icon-chevron:before {
+  content: "\e90e";
+}
+.icon-clip:before {
+  content: "\e90f";
+}
+.icon-dots:before {
+  content: "\e910";
+}
+.icon-email:before {
+  content: "\e911";
+}
+.icon-exit:before {
+  content: "\e912";
+}
+.icon-eye-closed:before {
+  content: "\e913";
+}
+.icon-eye-open:before {
+  content: "\e914";
+}
+.icon-file-add:before {
+  content: "\e915";
+}
+.icon-file-attach:before {
+  content: "\e916";
+}
+.icon-file-del:before {
+  content: "\e917";
+}
+.icon-file-done:before {
+  content: "\e918";
+}
+.icon-file-edit:before {
+  content: "\e919";
+}
+.icon-file-percent:before {
+  content: "\e91a";
+}
+.icon-file-search:before {
+  content: "\e91b";
+}
+.icon-file-time:before {
+  content: "\e91c";
+}
+.icon-file:before {
+  content: "\e91d";
+}
+.icon-form:before {
+  content: "\e91e";
+}
+.icon-gear:before {
+  content: "\e91f";
+}
+.icon-gmo:before {
+  content: "\e920";
+}
+.icon-goal:before {
+  content: "\e921";
+}
+.icon-grid:before {
+  content: "\e922";
+}
+.icon-handle-care:before {
+  content: "\e923";
+}
+.icon-home:before {
+  content: "\e924";
+}
+.icon-image-load:before {
+  content: "\e925";
+}
+.icon-industry:before {
+  content: "\e926";
+}
+.icon-key:before {
+  content: "\e927";
+}
+.icon-lens:before {
+  content: "\e928";
+}
+.icon-letter-open:before {
+  content: "\e929";
+}
+.icon-letter:before {
+  content: "\e92a";
+}
+.icon-list-empty:before {
+  content: "\e92b";
+}
+.icon-list:before {
+  content: "\e92c";
+}
+.icon-location:before {
+  content: "\e92d";
+}
+.icon-lock:before {
+  content: "\e92e";
+}
+.icon-map:before {
+  content: "\e92f";
+}
+.icon-menu:before {
+  content: "\e930";
+}
+.icon-money-bag:before {
+  content: "\e931";
+}
+.icon-pencil:before {
+  content: "\e932";
+}
+.icon-phone-call:before {
+  content: "\e933";
+}
+.icon-phone-info:before {
+  content: "\e934";
+}
+.icon-plus:before {
+  content: "\e935";
+}
+.icon-private:before {
+  content: "\e936";
+}
+.icon-profit:before {
+  content: "\e937";
+}
+.icon-receiver:before {
+  content: "\e938";
+}
+.icon-refer:before {
+  content: "\e939";
+}
+.icon-resume:before {
+  content: "\e93a";
+}
+.icon-ruble:before {
+  content: "\e93b";
+}
+.icon-salary:before {
+  content: "\e93c";
+}
+.icon-share:before {
+  content: "\e93d";
+}
+.icon-shevron-next:before {
+  content: "\e93e";
+}
+.icon-shevron-prev:before {
+  content: "\e93f";
+}
+.icon-shop-list:before {
+  content: "\e940";
+}
+.icon-trash:before {
+  content: "\e941";
+}
+.icon-user-key:before {
+  content: "\e942";
+}
+.icon-user:before {
+  content: "\e943";
+}
+.icon-writing:before {
+  content: "\e944";
+}
