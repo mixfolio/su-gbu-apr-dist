@@ -12,7 +12,29 @@
 
 <body>
 
-   @@include("_header.html")
+   <div class="header">
+   <a class="nav-brand" href="home.html"><img src="img/svg/apr-logo-07-2.svg" height="36" alt="АПР-лого"></a>
+   <h5 class="header__title">Система управления ГБУ АПР</h5>
+   <div class="header__group-btn">
+      <form>
+         <input style="background-color: #f6f6f6;" class="f-control icon-user" name="search" type="text" placeholder="Поиск">
+      </form>
+      <div class="header-avatar">
+            <div class="header-avatar__pict icon-user">
+               <!-- <img src="img/svg/user-ico-rect.svg" width="48" height="48" alt="user-ico"> -->
+            </div>
+            <ul class="user-menu">
+               <li>
+                  <a class="profile-link icon-user" href="profile-2.html">Профиль</a>
+               </li>
+               <li>
+                  <a class="profile-link icon-exit" href="index.html">Выйти</a>
+               </li>
+            </ul>
+         <p class="header-avatar__text hide">Родионов П.В.</p>
+      </div>
+   </div>
+</div>
 
    <div class="content">
       <!-- Start Sidebar-left -->
@@ -78,24 +100,191 @@
 
             <!-- TAB Content 1 -->
             <div class="tab-content">
-               @@include("_dashboard-t1.html")
+               <div class="row">
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Выберите нового пользователя для регистрации</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Рабочий E-mail пользователя</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Введите текст">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите управление</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите отдел</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   
+
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Укажите должность</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="Выберите из списка">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Организация</label>
+      <input id="mailFrom" name="mail-from" class="f-control w-100" type="text" placeholder="ГБУ «АПР»">
+   </div>
+
+   <div class="col-3 mb-3">
+      <label class="f-label" for="mailFrom">Стандартный выбор</label>
+      <select class="f-select w-100">
+         <option selected>Open this select menu</option>
+         <option value="1">One</option>
+         <option value="2">Two</option>
+         <option value="3">Three</option>
+       </select>
+   </div>
+
+   
+   
+   <div class="w-100 text-center mt-2">
+      <button class="btn btn-primary">Зарегистрировать</button>
+   </div>
+</div>
             </div>
 
             <!-- TAB Content 2 -->
             <div  class="tab-content">
-               @@include("_dashboard-t2.html")
+               
+<div class="row mb-3">
+   <form class="flex justify-content-between">
+      <input class="f-control" name="search" type="text" placeholder="Поиск">
+      <button class="btn btn-primary" type="submit">Найти</button>
+   </form>
+</div>
+
+<div>
+   <table class="table table-new">
+      <thead class="sticky">
+         <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Организация</th>
+            <th>Управление</th>
+            <th>Отдел</th>
+            <th>Должность</th>
+            <th>Кабинет</th>
+            <th>Телефон</th>
+         </tr>
+      </thead>
+      <tbody>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+         <tr>
+            <td>1</td>
+            <td>Иванов Иван Иванович</td>
+            <td>ГБУ «АПР»</td>
+            <td>Управление подготовки предложений по комплексному развитию территорий(УПП)</td>
+            <td>Отдел сопровождения проектов комплексного развития территорий</td>
+            <td>Главный специалист</td>
+            <td>Не указан</td>
+            <td>333</td>
+         </tr>
+
+
+      </tbody>
+   </table>
+</div>
             </div>
 
             <!-- TAB Content 3 -->
             <div class="tab-content">
-               @@include("_404.html")
+               <section class="welcome">    
+   <div class="welcome__dialog">
+      <div class="welcome__pict">
+         <img src="img/svg/404.svg" alt="error">
+      </div>
+      <div class="welcome__title">Страница не найдена</div>
+      <a class="btn btn-primary" href="home.html">Главная</a>
+   </div>
+</section>
             </div>
 
 
          </section>
 
       </main>
-      @@include("_sidebar-right.html")
+      <div class="sidebar-right show-menu">
+   <div class="sidebar-right__menu">
+      
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-arr-next" id="sidebarBtn">
+            <!-- <img src="img/svg/arrow-ico.svg" alt="arrow"> -->
+         </div>
+         <p class="sidebar__toggler-text sbar--show ml-2">Свернуть</p>
+      </div>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-bell">
+            <span class="badge">99+</span>
+            <!-- <img class="sidebar-ico" src="img/svg/alarm-clock-ico.svg" alt="notify"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Оповещения</p>
+      </div>
+      <p class="mb-4 text-muted sbar--show">Нет оповещений</p>
+
+      <div class="sidebar__toggler mb-4">
+         <div class="btn-round text-primary icon-calendar">
+            <!-- <img class="sidebar-ico" src="img/svg/calendar-ico.svg" alt="shedule"> -->
+         </div>
+         <p class="sidebar__desc sbar--show">Календарь</p>
+      </div>
+
+      <div class="sidebar__date sbar--show mb-4">
+         <p class="sidebar__date-current">1 января 2020</p>
+         <p class="sidebar__weekday text-muted">Среда</p>
+      </div>
+
+      <div class="sidebar__toggler sbar--show mb-4">
+         <p class=" icon-plus icon-text">Добавить событие</p>
+         
+         
+      </div>
+
+   </div>
+</div>
    </div>
 
    <script src="js/script.min.js"></script>
