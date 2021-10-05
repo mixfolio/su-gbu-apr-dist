@@ -449,6 +449,10 @@
   width: 100%;
 }
 
+.h-100 {
+  height: 100%;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1814,6 +1818,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: calc(100% - 96px);
 }
 
 .title {
